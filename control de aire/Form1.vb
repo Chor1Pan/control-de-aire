@@ -461,33 +461,14 @@ Public Class Form1
         If archivoaudio <> "" Then
             AxWindowsMediaPlayer2.URL = archivoaudio
             AxWindowsMediaPlayer2.Ctlcontrols.play()
-            TrackBar1.Minimum = 0
-            lblcancion.Text = nombrearchivo
-            TrackBar1.Maximum = AxWindowsMediaPlayer2.currentMedia.duration
-            Label1.BackColor = Color.Red
-            Button8.Enabled = False
-            Button9.Enabled = True
-            contvolumen = 0
-            TrackBar2.Value = 0
-            If TrackBar1.Maximum < 15 Then
-                TrackBar1.TickFrequency = 1
-            Else
-                TrackBar1.TickFrequency = sonido.CalcularTamano / 15
-            End If
-            Timer1.Enabled = True
-            Timer1.Start()
-            pausa.Stop()
-            pausado = 0
-            TrackBar2.Value = 0
-            Timer2.Start()
+            contvolumen = 2
+            TrackBar2.Value = 2
+            'pausado = 0
         End If
     End Sub
     Public Sub DetenerReproduccion3()
         AxWindowsMediaPlayer2.Ctlcontrols.stop()
-        Timer1.Enabled = False
-        Timer1.Stop()
-        TrackBar1.Value = 0
-        stTiempostranscurrido.Text = "00:00"
+        TrackBar2.Value = 100
     End Sub
 
     Private Sub MoveItemListView1_DoubleClick(sender As Object, e As EventArgs) Handles MoveItemListView1.DoubleClick
@@ -517,10 +498,14 @@ Public Class Form1
     End Sub
 
     Private Sub btnm1_1_Click(sender As Object, e As EventArgs) Handles btnm1_1.Click, btnm1_2.Click, btnm1_3.Click, btnm1_4.Click, btnm1_5.Click, btnm1_6.Click, btnm1_7.Click, btnm1_8.Click, btnm1_9.Click, btnm1_10.Click, btnm1_11.Click, btnm1_12.Click, btnm1_13.Click, btnm1_14.Click, btnm1_15.Click, btnm1_16.Click, btnm1_17.Click, btnm1_18.Click, btnm1_19.Click, btnm1_20.Click, btnm1_21.Click, btnm1_22.Click, btnm1_23.Click, btnm1_24.Click, btnm1_25.Click, btnm1_26.Click, btnm1_27.Click, btnm1_28.Click, btnm1_29.Click, btnm1_30.Click
-        If Not CType(sender, Button).Tag = "noitem" Then
+            If Not CType(sender, Button).Tag = "noitem" Then
             colorbotonera()
-            IniciarReproduccion(CType(sender, Button).Tag, CType(sender, Button).Text)
-            launchpad = True
+            If ToolStripMenuItem4.Checked = True Then
+                IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
+            Else
+                IniciarReproduccion(CType(sender, Button).Tag, CType(sender, Button).Text)
+                launchpad = True
+            End If
             CType(sender, Button).BackColor = Color.Maroon
         End If
     End Sub
@@ -528,8 +513,12 @@ Public Class Form1
     Private Sub btnm2_1_Click(sender As Object, e As EventArgs) Handles btnm2_1.Click, btnm2_2.Click, btnm2_3.Click, btnm2_4.Click, btnm2_5.Click, btnm2_6.Click, btnm2_7.Click, btnm2_8.Click, btnm2_9.Click, btnm2_10.Click, btnm2_11.Click, btnm2_12.Click, btnm2_13.Click, btnm2_14.Click, btnm2_15.Click, btnm2_16.Click, btnm2_17.Click, btnm2_18.Click, btnm2_19.Click, btnm2_20.Click, btnm2_21.Click, btnm2_22.Click, btnm2_23.Click, btnm2_24.Click, btnm2_25.Click, btnm2_26.Click, btnm2_27.Click, btnm2_28.Click, btnm2_29.Click, btnm2_30.Click
         If Not CType(sender, Button).Tag = "noitem" Then
             colorbotonera()
-            IniciarReproduccion(CType(sender, Button).Tag, CType(sender, Button).Text)
-            launchpad = True
+            If ToolStripMenuItem5.Checked = True Then
+                IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
+            Else
+                IniciarReproduccion(CType(sender, Button).Tag, CType(sender, Button).Text)
+                launchpad = True
+            End If
             CType(sender, Button).BackColor = Color.Maroon
         End If
     End Sub
@@ -736,6 +725,9 @@ Public Class Form1
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        pausar()
+    End Sub
+    Public Sub pausar()
         If Button7.Tag = "Pausar" Then
             sonido.Pausar()
             Button7.Tag = "Continuar"
@@ -1250,6 +1242,8 @@ Public Class Form1
         Next
     End Sub
 
+
+
     Private Sub btnm1_1_MouseDown(sender As Object, e As MouseEventArgs) Handles btnm1_1.MouseDown, btnm1_2.MouseDown, btnm1_3.MouseDown, btnm1_4.MouseDown, btnm1_5.MouseDown, btnm1_6.MouseDown, btnm1_7.MouseDown, btnm1_8.MouseDown, btnm1_9.MouseDown, btnm1_10.MouseDown, btnm1_11.MouseDown, btnm1_12.MouseDown, btnm1_13.MouseDown, btnm1_14.MouseDown, btnm1_15.MouseDown, btnm1_16.MouseDown, btnm1_17.MouseDown, btnm1_18.MouseDown, btnm1_19.MouseDown, btnm1_20.MouseDown, btnm1_21.MouseDown, btnm1_22.MouseDown, btnm1_23.MouseDown, btnm1_24.MouseDown, btnm1_25.MouseDown, btnm1_26.MouseDown, btnm1_27.MouseDown, btnm1_28.MouseDown, btnm1_29.MouseDown, btnm1_30.MouseDown, btnm2_1.MouseDown, btnm2_2.MouseDown, btnm2_3.MouseDown, btnm2_4.MouseDown, btnm2_5.MouseDown, btnm2_6.MouseDown, btnm2_7.MouseDown, btnm2_8.MouseDown, btnm2_9.MouseDown, btnm2_10.MouseDown, btnm2_11.MouseDown, btnm2_12.MouseDown, btnm2_13.MouseDown, btnm2_14.MouseDown, btnm2_15.MouseDown, btnm2_16.MouseDown, btnm2_17.MouseDown, btnm2_18.MouseDown, btnm2_19.MouseDown, btnm2_20.MouseDown, btnm2_21.MouseDown, btnm2_22.MouseDown, btnm2_23.MouseDown, btnm2_24.MouseDown, btnm2_25.MouseDown, btnm2_26.MouseDown, btnm2_27.MouseDown, btnm2_28.MouseDown, btnm2_29.MouseDown, btnm2_30.MouseDown
         If e.Button = Windows.Forms.MouseButtons.Right Then
             If CType(sender, Button).BackColor = Color.FromArgb(53, 87, 117) Then
@@ -1264,10 +1258,6 @@ Public Class Form1
         If Not ExpTree1.SelectedItem Is Nothing Then
             ExpTree1.RefreshTree()
         End If
-    End Sub
-
-    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
-        Form5.Show()
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
@@ -1293,6 +1283,29 @@ Public Class Form1
             Timer3.Stop()
             lblcancion.BackColor = Color.FromArgb(53, 87, 117)
             final = 0
+        End If
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+        If ToolStripMenuItem4.Checked = True Then
+            ToolStripMenuItem4.ForeColor = Color.Red
+        Else
+            ToolStripMenuItem4.ForeColor = Color.Black
+        End If
+    End Sub
+
+    Private Sub AxWindowsMediaPlayer2_StatusChange(sender As Object, e As EventArgs) Handles AxWindowsMediaPlayer2.StatusChange
+        If AxWindowsMediaPlayer2.playState = WMPPlayState.wmppsStopped Then
+            DetenerReproduccion3()
+
+        End If
+    End Sub
+
+    Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
+        If ToolStripMenuItem5.Checked = True Then
+            ToolStripMenuItem5.ForeColor = Color.Red
+        Else
+            ToolStripMenuItem5.ForeColor = Color.Black
         End If
     End Sub
 End Class

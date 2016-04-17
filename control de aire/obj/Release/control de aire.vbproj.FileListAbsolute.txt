@@ -14,7 +14,6 @@ E:\control de aire\control de aire\bin\Release\System.Management.dll
 E:\control de aire\control de aire\bin\Release\System.Windows.Forms.dll
 E:\control de aire\control de aire\bin\Release\System.Xml.dll
 E:\control de aire\control de aire\bin\Release\System.Xml.Linq.dll
-E:\control de aire\control de aire\bin\Release\WinMM.Net.pdb
 E:\control de aire\control de aire\bin\Release\Interop.WMPLib.dll
 E:\control de aire\control de aire\bin\Release\AxInterop.WMPLib.dll
 E:\control de aire\control de aire\obj\Release\Interop.WMPLib.dll
@@ -34,4 +33,3 @@ E:\control de aire\control de aire\obj\Release\Control de Aire.application
 E:\control de aire\control de aire\obj\Release\Control de Aire.exe
 E:\control de aire\control de aire\obj\Release\Control de Aire.xml
 E:\control de aire\control de aire\obj\Release\Control de Aire.pdb
-E:\control de aire\control de aire\obj\Release\control de aire.vbprojResolveAssemblyReference.cache

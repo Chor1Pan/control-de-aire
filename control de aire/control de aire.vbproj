@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>Control de Aire 3</ProductName>
     <PublisherName>El Puente FM 103.3</PublisherName>
-    <ApplicationRevision>24</ApplicationRevision>
+    <ApplicationRevision>26</ApplicationRevision>
     <ApplicationVersion>3.0.56.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -388,6 +388,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo_en_gobito_7nE_icon.ico" />
+    <None Include="Resources\pisador.png" />
     <None Include="Resources\Searchicon.png" />
     <None Include="Resources\new.png" />
     <None Include="Resources\openfile.png" />

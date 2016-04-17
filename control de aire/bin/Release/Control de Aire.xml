@@ -102,6 +102,10 @@ ControldeAire
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:controldeaire.My.Resources.Resources.pisador">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:controldeaire.My.Resources.Resources.play16x">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
