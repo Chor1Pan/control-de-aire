@@ -46,11 +46,6 @@ Partial Class Form1
         Me.Button5 = New System.Windows.Forms.Button()
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.MoveItemListView1 = New controldeaire.MoveItemListView()
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label8 = New System.Windows.Forms.Label()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -154,6 +149,8 @@ Partial Class Form1
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.btn_menu2 = New System.Windows.Forms.Button()
         Me.btn_menu1 = New System.Windows.Forms.Button()
         Me.TrackBar2 = New System.Windows.Forms.TrackBar()
@@ -182,8 +179,11 @@ Partial Class Form1
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MoveItemListView1 = New controldeaire.MoveItemListView()
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.GroupBox1.SuspendLayout()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -528,45 +528,6 @@ Partial Class Form1
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.UseCompatibleTextRendering = True
-        '
-        'MoveItemListView1
-        '
-        Me.MoveItemListView1.AllowDrop = True
-        Me.MoveItemListView1.AutoArrange = False
-        Me.MoveItemListView1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.MoveItemListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
-        Me.MoveItemListView1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.MoveItemListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MoveItemListView1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(1, Byte), Integer))
-        Me.MoveItemListView1.FullRowSelect = True
-        Me.MoveItemListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.MoveItemListView1.HideSelection = False
-        Me.MoveItemListView1.InsertionLineColor = System.Drawing.Color.White
-        Me.MoveItemListView1.Location = New System.Drawing.Point(3, 7)
-        Me.MoveItemListView1.Name = "MoveItemListView1"
-        Me.MoveItemListView1.Size = New System.Drawing.Size(453, 220)
-        Me.MoveItemListView1.TabIndex = 52
-        Me.MoveItemListView1.UseCompatibleStateImageBehavior = False
-        Me.MoveItemListView1.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "Pista"
-        Me.ColumnHeader5.Width = 353
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "Tiempo"
-        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.ColumnHeader6.Width = 83
-        '
-        'ColumnHeader7
-        '
-        Me.ColumnHeader7.Width = 0
-        '
-        'ColumnHeader8
-        '
-        Me.ColumnHeader8.Width = 0
         '
         'Label8
         '
@@ -2192,7 +2153,7 @@ Partial Class Form1
         '
         Me.menu2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripSeparator2, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripSeparator4, Me.ToolStripMenuItem5})
         Me.menu2.Name = "menu1"
-        Me.menu2.Size = New System.Drawing.Size(168, 126)
+        Me.menu2.Size = New System.Drawing.Size(168, 104)
         '
         'ToolStripMenuItem1
         '
@@ -2221,6 +2182,19 @@ Partial Class Form1
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
         Me.ToolStripMenuItem3.Size = New System.Drawing.Size(167, 22)
         Me.ToolStripMenuItem3.Text = "Guardar Botonera"
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(164, 6)
+        '
+        'ToolStripMenuItem5
+        '
+        Me.ToolStripMenuItem5.CheckOnClick = True
+        Me.ToolStripMenuItem5.Image = Global.controldeaire.My.Resources.Resources.pisador
+        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(167, 22)
+        Me.ToolStripMenuItem5.Text = "Pisador"
         '
         'btn_menu2
         '
@@ -2499,6 +2473,7 @@ Partial Class Form1
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 51
+        Me.TextBox3.Visible = False
         '
         'PictureBox1
         '
@@ -2511,18 +2486,44 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'ToolStripSeparator4
+        'MoveItemListView1
         '
-        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(164, 6)
+        Me.MoveItemListView1.AllowDrop = True
+        Me.MoveItemListView1.AutoArrange = False
+        Me.MoveItemListView1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.MoveItemListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
+        Me.MoveItemListView1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.MoveItemListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MoveItemListView1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(1, Byte), Integer))
+        Me.MoveItemListView1.FullRowSelect = True
+        Me.MoveItemListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
+        Me.MoveItemListView1.HideSelection = False
+        Me.MoveItemListView1.InsertionLineColor = System.Drawing.Color.White
+        Me.MoveItemListView1.Location = New System.Drawing.Point(3, 7)
+        Me.MoveItemListView1.Name = "MoveItemListView1"
+        Me.MoveItemListView1.Size = New System.Drawing.Size(453, 220)
+        Me.MoveItemListView1.TabIndex = 52
+        Me.MoveItemListView1.UseCompatibleStateImageBehavior = False
+        Me.MoveItemListView1.View = System.Windows.Forms.View.Details
         '
-        'ToolStripMenuItem5
+        'ColumnHeader5
         '
-        Me.ToolStripMenuItem5.CheckOnClick = True
-        Me.ToolStripMenuItem5.Image = Global.controldeaire.My.Resources.Resources.pisador
-        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(167, 22)
-        Me.ToolStripMenuItem5.Text = "Pisador"
+        Me.ColumnHeader5.Text = "Pista"
+        Me.ColumnHeader5.Width = 353
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "Tiempo"
+        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.ColumnHeader6.Width = 83
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Width = 0
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Width = 0
         '
         'Form1
         '
