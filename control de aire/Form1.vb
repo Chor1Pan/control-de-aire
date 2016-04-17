@@ -373,6 +373,7 @@ Public Class Form1
         End If
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        TextBox3.Text = sonido.niveles
         stTiempostotal.Text = sonido.Tamano()
         stTiempostranscurrido.Text = sonido.Posicion()
         stTiemposrestante.Text = sonido.restos
@@ -515,7 +516,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnm1_1.Click, btnm1_2.Click, btnm1_3.Click, btnm1_4.Click, btnm1_5.Click, btnm1_6.Click, btnm1_7.Click, btnm1_8.Click, btnm1_9.Click, btnm1_10.Click, btnm1_11.Click, btnm1_12.Click, btnm1_13.Click, btnm1_14.Click, btnm1_15.Click, btnm1_16.Click, btnm1_17.Click, btnm1_18.Click, btnm1_19.Click, btnm1_20.Click, btnm1_21.Click, btnm1_22.Click, btnm1_23.Click, btnm1_24.Click, btnm1_25.Click, btnm1_26.Click, btnm1_27.Click, btnm1_28.Click, btnm1_29.Click, btnm1_30.Click, btnm2_1.Click, btnm2_2.Click, btnm2_3.Click, btnm2_4.Click, btnm2_5.Click, btnm2_6.Click, btnm2_7.Click, btnm2_8.Click, btnm2_9.Click, btnm2_10.Click, btnm2_11.Click, btnm2_12.Click, btnm2_13.Click, btnm2_14.Click, btnm2_15.Click, btnm2_16.Click, btnm2_17.Click, btnm2_18.Click, btnm2_19.Click, btnm2_20.Click, btnm2_21.Click, btnm2_22.Click, btnm2_23.Click, btnm2_24.Click, btnm2_25.Click, btnm2_26.Click, btnm2_27.Click, btnm2_28.Click, btnm2_29.Click, btnm2_30.Click
+    Private Sub btnm1_1_Click(sender As Object, e As EventArgs) Handles btnm1_1.Click, btnm1_2.Click, btnm1_3.Click, btnm1_4.Click, btnm1_5.Click, btnm1_6.Click, btnm1_7.Click, btnm1_8.Click, btnm1_9.Click, btnm1_10.Click, btnm1_11.Click, btnm1_12.Click, btnm1_13.Click, btnm1_14.Click, btnm1_15.Click, btnm1_16.Click, btnm1_17.Click, btnm1_18.Click, btnm1_19.Click, btnm1_20.Click, btnm1_21.Click, btnm1_22.Click, btnm1_23.Click, btnm1_24.Click, btnm1_25.Click, btnm1_26.Click, btnm1_27.Click, btnm1_28.Click, btnm1_29.Click, btnm1_30.Click
         If Not CType(sender, Button).Tag = "noitem" Then
             colorbotonera()
             IniciarReproduccion(CType(sender, Button).Tag, CType(sender, Button).Text)
@@ -523,6 +524,16 @@ Public Class Form1
             CType(sender, Button).BackColor = Color.Maroon
         End If
     End Sub
+
+    Private Sub btnm2_1_Click(sender As Object, e As EventArgs) Handles btnm2_1.Click, btnm2_2.Click, btnm2_3.Click, btnm2_4.Click, btnm2_5.Click, btnm2_6.Click, btnm2_7.Click, btnm2_8.Click, btnm2_9.Click, btnm2_10.Click, btnm2_11.Click, btnm2_12.Click, btnm2_13.Click, btnm2_14.Click, btnm2_15.Click, btnm2_16.Click, btnm2_17.Click, btnm2_18.Click, btnm2_19.Click, btnm2_20.Click, btnm2_21.Click, btnm2_22.Click, btnm2_23.Click, btnm2_24.Click, btnm2_25.Click, btnm2_26.Click, btnm2_27.Click, btnm2_28.Click, btnm2_29.Click, btnm2_30.Click
+        If Not CType(sender, Button).Tag = "noitem" Then
+            colorbotonera()
+            IniciarReproduccion(CType(sender, Button).Tag, CType(sender, Button).Text)
+            launchpad = True
+            CType(sender, Button).BackColor = Color.Maroon
+        End If
+    End Sub
+
     Private Sub btnm1_1_TextChanged(sender As Object, e As EventArgs) Handles btnm1_1.TextChanged, btnm1_2.TextChanged, btnm1_3.TextChanged, btnm1_4.TextChanged, btnm1_5.TextChanged, btnm1_6.TextChanged, btnm1_7.TextChanged, btnm1_8.TextChanged, btnm1_9.TextChanged, btnm1_10.TextChanged, btnm1_11.TextChanged, btnm1_12.TextChanged, btnm1_13.TextChanged, btnm1_14.TextChanged, btnm1_15.TextChanged, btnm1_16.TextChanged, btnm1_17.TextChanged, btnm1_18.TextChanged, btnm1_19.TextChanged, btnm1_20.TextChanged, btnm1_21.TextChanged, btnm1_22.TextChanged, btnm1_23.TextChanged, btnm1_24.TextChanged, btnm1_25.TextChanged, btnm1_26.TextChanged, btnm1_27.TextChanged, btnm1_28.TextChanged, btnm1_29.TextChanged, btnm1_30.TextChanged
         If Not CType(sender, Button).Text = "" Then
             botonera1 = True

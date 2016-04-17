@@ -46,11 +46,6 @@ Partial Class Form1
         Me.Button5 = New System.Windows.Forms.Button()
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.MoveItemListView1 = New controldeaire.MoveItemListView()
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
         Me.Label8 = New System.Windows.Forms.Label()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -71,10 +66,10 @@ Partial Class Form1
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ActualizarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lv1 = New System.Windows.Forms.ListView()
-        Me.ColumnHeaderName = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeaderSize = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeaderType = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeaderModifyDate = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeaderName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeaderSize = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeaderType = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeaderModifyDate = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.stMensajes = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
@@ -180,34 +175,40 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.GroupBox1.SuspendLayout
-        CType(Me.TrackBar1,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.GroupBox2.SuspendLayout
-        Me.GroupBox3.SuspendLayout
-        CType(Me.SplitContainer1,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SplitContainer1.Panel1.SuspendLayout
-        Me.SplitContainer1.Panel2.SuspendLayout
-        Me.SplitContainer1.SuspendLayout
-        Me.ContextMenuStrip1.SuspendLayout
-        Me.stMensajes.SuspendLayout
-        Me.GroupBox4.SuspendLayout
-        Me.menu1.SuspendLayout
-        Me.GroupBox5.SuspendLayout
-        Me.menu2.SuspendLayout
-        CType(Me.TrackBar2,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.GroupBox7.SuspendLayout
-        Me.GroupBox6.SuspendLayout
-        Me.GroupBox8.SuspendLayout
-        CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AxWindowsMediaPlayer2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.MoveItemListView1 = New controldeaire.MoveItemListView()
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer1.Panel1.SuspendLayout()
+        Me.SplitContainer1.Panel2.SuspendLayout()
+        Me.SplitContainer1.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
+        Me.stMensajes.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.menu1.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.menu2.SuspendLayout()
+        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox7.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        Me.GroupBox8.SuspendLayout()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxWindowsMediaPlayer2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'Label1
         '
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(465, 3)
         Me.Label1.Name = "Label1"
@@ -215,7 +216,7 @@ Partial Class Form1
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "AL AIRE"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label1.UseCompatibleTextRendering = true
+        Me.Label1.UseCompatibleTextRendering = True
         '
         'GroupBox1
         '
@@ -242,13 +243,13 @@ Partial Class Form1
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(457, 199)
         Me.GroupBox1.TabIndex = 2
-        Me.GroupBox1.TabStop = false
-        Me.GroupBox1.UseCompatibleTextRendering = true
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.UseCompatibleTextRendering = True
         '
         'Label13
         '
         Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Lime
         Me.Label13.Location = New System.Drawing.Point(378, 166)
         Me.Label13.Name = "Label13"
@@ -256,14 +257,14 @@ Partial Class Form1
         Me.Label13.TabIndex = 50
         Me.Label13.Text = "0"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label13.UseCompatibleTextRendering = true
-        Me.Label13.Visible = false
+        Me.Label13.UseCompatibleTextRendering = True
+        Me.Label13.Visible = False
         '
         'Button14
         '
-        Me.Button14.AutoEllipsis = true
+        Me.Button14.AutoEllipsis = True
         Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button14.Enabled = false
+        Me.Button14.Enabled = False
         Me.Button14.ForeColor = System.Drawing.Color.Black
         Me.Button14.Image = Global.controldeaire.My.Resources.Resources.set_playlist
         Me.Button14.ImageAlign = System.Drawing.ContentAlignment.TopCenter
@@ -271,23 +272,23 @@ Partial Class Form1
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(72, 25)
         Me.Button14.TabIndex = 45
-        Me.Button14.TabStop = false
+        Me.Button14.TabStop = False
         Me.Button14.Text = "Iniciar"
         Me.Button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button14.UseVisualStyleBackColor = true
+        Me.Button14.UseVisualStyleBackColor = True
         '
         'Label14
         '
-        Me.Label14.AutoEllipsis = true
+        Me.Label14.AutoEllipsis = True
         Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.Lime
         Me.Label14.Location = New System.Drawing.Point(50, 171)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(104, 21)
         Me.Label14.TabIndex = 48
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label14.UseCompatibleTextRendering = true
+        Me.Label14.UseCompatibleTextRendering = True
         '
         'Label11
         '
@@ -300,9 +301,9 @@ Partial Class Form1
         '
         'Label12
         '
-        Me.Label12.AutoEllipsis = true
+        Me.Label12.AutoEllipsis = True
         Me.Label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Lime
         Me.Label12.Location = New System.Drawing.Point(161, 171)
         Me.Label12.Name = "Label12"
@@ -310,33 +311,33 @@ Partial Class Form1
         Me.Label12.TabIndex = 49
         Me.Label12.Text = "00:00"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label12.UseCompatibleTextRendering = true
+        Me.Label12.UseCompatibleTextRendering = True
         '
         'CheckBox1
         '
-        Me.CheckBox1.Enabled = false
+        Me.CheckBox1.Enabled = False
         Me.CheckBox1.ForeColor = System.Drawing.Color.White
         Me.CheckBox1.Location = New System.Drawing.Point(302, 170)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(145, 25)
         Me.CheckBox1.TabIndex = 44
-        Me.CheckBox1.TabStop = false
+        Me.CheckBox1.TabStop = False
         Me.CheckBox1.Text = "Ejecutar luego de pista"
-        Me.CheckBox1.UseVisualStyleBackColor = true
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'lblcancion
         '
-        Me.lblcancion.AutoEllipsis = true
-        Me.lblcancion.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.lblcancion.AutoEllipsis = True
+        Me.lblcancion.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.lblcancion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblcancion.Font = New System.Drawing.Font("Microsoft Sans Serif", 11!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblcancion.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblcancion.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.lblcancion.Location = New System.Drawing.Point(12, 12)
         Me.lblcancion.Name = "lblcancion"
         Me.lblcancion.Size = New System.Drawing.Size(433, 23)
         Me.lblcancion.TabIndex = 33
         Me.lblcancion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblcancion.UseCompatibleTextRendering = true
+        Me.lblcancion.UseCompatibleTextRendering = True
         '
         'Label3
         '
@@ -350,7 +351,7 @@ Partial Class Form1
         'stTiempostotal
         '
         Me.stTiempostotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.stTiempostotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.stTiempostotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stTiempostotal.ForeColor = System.Drawing.Color.Lime
         Me.stTiempostotal.Location = New System.Drawing.Point(375, 44)
         Me.stTiempostotal.Name = "stTiempostotal"
@@ -358,12 +359,12 @@ Partial Class Form1
         Me.stTiempostotal.TabIndex = 27
         Me.stTiempostotal.Text = "00:00"
         Me.stTiempostotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.stTiempostotal.UseCompatibleTextRendering = true
+        Me.stTiempostotal.UseCompatibleTextRendering = True
         '
         'stTiempostranscurrido
         '
         Me.stTiempostranscurrido.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.stTiempostranscurrido.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.stTiempostranscurrido.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stTiempostranscurrido.ForeColor = System.Drawing.Color.Lime
         Me.stTiempostranscurrido.Location = New System.Drawing.Point(220, 44)
         Me.stTiempostranscurrido.Name = "stTiempostranscurrido"
@@ -371,12 +372,12 @@ Partial Class Form1
         Me.stTiempostranscurrido.TabIndex = 27
         Me.stTiempostranscurrido.Text = "00:00"
         Me.stTiempostranscurrido.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.stTiempostranscurrido.UseCompatibleTextRendering = true
+        Me.stTiempostranscurrido.UseCompatibleTextRendering = True
         '
         'stTiemposrestante
         '
         Me.stTiemposrestante.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.stTiemposrestante.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.stTiemposrestante.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stTiemposrestante.ForeColor = System.Drawing.Color.Lime
         Me.stTiemposrestante.Location = New System.Drawing.Point(70, 44)
         Me.stTiemposrestante.Name = "stTiemposrestante"
@@ -384,7 +385,7 @@ Partial Class Form1
         Me.stTiemposrestante.TabIndex = 27
         Me.stTiemposrestante.Text = "00:00"
         Me.stTiemposrestante.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.stTiemposrestante.UseCompatibleTextRendering = true
+        Me.stTiemposrestante.UseCompatibleTextRendering = True
         '
         'Label4
         '
@@ -408,98 +409,98 @@ Partial Class Form1
         '
         Me.Button8.BackColor = System.Drawing.Color.LightGray
         Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13,Byte),Integer), CType(CType(44,Byte),Integer), CType(CType(72,Byte),Integer))
+        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button8.Font = New System.Drawing.Font("Webdings", 30!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Button8.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.Location = New System.Drawing.Point(98, 107)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(82, 49)
         Me.Button8.TabIndex = 34
-        Me.Button8.TabStop = false
+        Me.Button8.TabStop = False
         Me.Button8.Text = "4"
-        Me.Button8.UseCompatibleTextRendering = true
-        Me.Button8.UseVisualStyleBackColor = false
+        Me.Button8.UseCompatibleTextRendering = True
+        Me.Button8.UseVisualStyleBackColor = False
         '
         'Button9
         '
         Me.Button9.BackColor = System.Drawing.Color.LightGray
         Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button9.Enabled = false
-        Me.Button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13,Byte),Integer), CType(CType(44,Byte),Integer), CType(CType(72,Byte),Integer))
+        Me.Button9.Enabled = False
+        Me.Button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Button9.FlatAppearance.BorderSize = 0
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button9.Font = New System.Drawing.Font("Webdings", 30!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Button9.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.Location = New System.Drawing.Point(275, 107)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(82, 49)
         Me.Button9.TabIndex = 34
-        Me.Button9.TabStop = false
+        Me.Button9.TabStop = False
         Me.Button9.Text = "<"
-        Me.Button9.UseCompatibleTextRendering = true
-        Me.Button9.UseVisualStyleBackColor = false
+        Me.Button9.UseCompatibleTextRendering = True
+        Me.Button9.UseVisualStyleBackColor = False
         '
         'Button7
         '
         Me.Button7.BackColor = System.Drawing.Color.LightGray
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13,Byte),Integer), CType(CType(44,Byte),Integer), CType(CType(72,Byte),Integer))
+        Me.Button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button7.Font = New System.Drawing.Font("Webdings", 30!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Button7.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.Location = New System.Drawing.Point(187, 107)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(82, 49)
         Me.Button7.TabIndex = 34
-        Me.Button7.TabStop = false
+        Me.Button7.TabStop = False
         Me.Button7.Tag = "Pausar"
         Me.Button7.Text = ";"
-        Me.Button7.UseCompatibleTextRendering = true
-        Me.Button7.UseVisualStyleBackColor = false
+        Me.Button7.UseCompatibleTextRendering = True
+        Me.Button7.UseVisualStyleBackColor = False
         '
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.LightGray
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13,Byte),Integer), CType(CType(44,Byte),Integer), CType(CType(72,Byte),Integer))
+        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button6.Font = New System.Drawing.Font("Webdings", 30!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Button6.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(9, 107)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(82, 49)
         Me.Button6.TabIndex = 34
-        Me.Button6.TabStop = false
+        Me.Button6.TabStop = False
         Me.Button6.Text = "9"
-        Me.Button6.UseCompatibleTextRendering = true
-        Me.Button6.UseVisualStyleBackColor = false
+        Me.Button6.UseCompatibleTextRendering = True
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.LightGray
         Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13,Byte),Integer), CType(CType(44,Byte),Integer), CType(CType(72,Byte),Integer))
+        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button5.Font = New System.Drawing.Font("Webdings", 30!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Button5.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(363, 107)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(82, 49)
         Me.Button5.TabIndex = 34
-        Me.Button5.TabStop = false
+        Me.Button5.TabStop = False
         Me.Button5.Text = ":"
-        Me.Button5.UseCompatibleTextRendering = true
-        Me.Button5.UseVisualStyleBackColor = false
+        Me.Button5.UseCompatibleTextRendering = True
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'TrackBar1
         '
-        Me.TrackBar1.AutoSize = false
+        Me.TrackBar1.AutoSize = False
         Me.TrackBar1.Location = New System.Drawing.Point(3, 68)
         Me.TrackBar1.Maximum = 100
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(448, 28)
         Me.TrackBar1.TabIndex = 26
-        Me.TrackBar1.TabStop = false
+        Me.TrackBar1.TabStop = False
         Me.TrackBar1.TickFrequency = 5
         '
         'GroupBox2
@@ -522,53 +523,14 @@ Partial Class Form1
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(457, 259)
         Me.GroupBox2.TabIndex = 3
-        Me.GroupBox2.TabStop = false
-        Me.GroupBox2.UseCompatibleTextRendering = true
-        '
-        'MoveItemListView1
-        '
-        Me.MoveItemListView1.AllowDrop = true
-        Me.MoveItemListView1.AutoArrange = false
-        Me.MoveItemListView1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50,Byte),Integer), CType(CType(70,Byte),Integer), CType(CType(86,Byte),Integer))
-        Me.MoveItemListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
-        Me.MoveItemListView1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.MoveItemListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.MoveItemListView1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(241,Byte),Integer), CType(CType(241,Byte),Integer), CType(CType(1,Byte),Integer))
-        Me.MoveItemListView1.FullRowSelect = true
-        Me.MoveItemListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.MoveItemListView1.HideSelection = false
-        Me.MoveItemListView1.InsertionLineColor = System.Drawing.Color.White
-        Me.MoveItemListView1.Location = New System.Drawing.Point(3, 7)
-        Me.MoveItemListView1.Name = "MoveItemListView1"
-        Me.MoveItemListView1.Size = New System.Drawing.Size(453, 220)
-        Me.MoveItemListView1.TabIndex = 52
-        Me.MoveItemListView1.UseCompatibleStateImageBehavior = false
-        Me.MoveItemListView1.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "Pista"
-        Me.ColumnHeader5.Width = 353
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "Tiempo"
-        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.ColumnHeader6.Width = 83
-        '
-        'ColumnHeader7
-        '
-        Me.ColumnHeader7.Width = 0
-        '
-        'ColumnHeader8
-        '
-        Me.ColumnHeader8.Width = 0
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.UseCompatibleTextRendering = True
         '
         'Label8
         '
-        Me.Label8.AutoEllipsis = true
+        Me.Label8.AutoEllipsis = True
         Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Lime
         Me.Label8.Location = New System.Drawing.Point(97, 232)
         Me.Label8.Name = "Label8"
@@ -576,7 +538,7 @@ Partial Class Form1
         Me.Label8.TabIndex = 36
         Me.Label8.Text = "0"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label8.UseCompatibleTextRendering = true
+        Me.Label8.UseCompatibleTextRendering = True
         '
         'RichTextBox2
         '
@@ -585,13 +547,13 @@ Partial Class Form1
         Me.RichTextBox2.Size = New System.Drawing.Size(149, 97)
         Me.RichTextBox2.TabIndex = 51
         Me.RichTextBox2.Text = ""
-        Me.RichTextBox2.Visible = false
+        Me.RichTextBox2.Visible = False
         '
         'Label7
         '
-        Me.Label7.AutoEllipsis = true
+        Me.Label7.AutoEllipsis = True
         Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Lime
         Me.Label7.Location = New System.Drawing.Point(202, 232)
         Me.Label7.Name = "Label7"
@@ -599,7 +561,7 @@ Partial Class Form1
         Me.Label7.TabIndex = 35
         Me.Label7.Text = "00:00"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label7.UseCompatibleTextRendering = true
+        Me.Label7.UseCompatibleTextRendering = True
         '
         'Label6
         '
@@ -621,9 +583,9 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.AutoEllipsis = true
+        Me.Button4.AutoEllipsis = True
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button4.Enabled = false
+        Me.Button4.Enabled = False
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.ForeColor = System.Drawing.Color.White
         Me.Button4.Image = Global.controldeaire.My.Resources.Resources.edit
@@ -631,13 +593,13 @@ Partial Class Form1
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(38, 22)
         Me.Button4.TabIndex = 33
-        Me.Button4.TabStop = false
+        Me.Button4.TabStop = False
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.Button4.UseVisualStyleBackColor = true
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.AutoEllipsis = true
+        Me.Button2.AutoEllipsis = True
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.Color.White
@@ -646,13 +608,13 @@ Partial Class Form1
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(38, 22)
         Me.Button2.TabIndex = 33
-        Me.Button2.TabStop = false
+        Me.Button2.TabStop = False
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.Button2.UseVisualStyleBackColor = true
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.AutoEllipsis = true
+        Me.Button3.AutoEllipsis = True
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.ForeColor = System.Drawing.Color.White
@@ -661,9 +623,9 @@ Partial Class Form1
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(38, 22)
         Me.Button3.TabIndex = 33
-        Me.Button3.TabStop = false
+        Me.Button3.TabStop = False
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.Button3.UseVisualStyleBackColor = true
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
@@ -671,7 +633,7 @@ Partial Class Form1
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(495, 20)
         Me.TextBox2.TabIndex = 17
-        Me.TextBox2.Visible = false
+        Me.TextBox2.Visible = False
         '
         'cb1
         '
@@ -680,7 +642,7 @@ Partial Class Form1
         Me.cb1.Name = "cb1"
         Me.cb1.Size = New System.Drawing.Size(199, 21)
         Me.cb1.TabIndex = 6
-        Me.cb1.Visible = false
+        Me.cb1.Visible = False
         '
         'TextBox1
         '
@@ -688,7 +650,7 @@ Partial Class Form1
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(495, 20)
         Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Visible = false
+        Me.TextBox1.Visible = False
         '
         'sbr1
         '
@@ -696,7 +658,7 @@ Partial Class Form1
         Me.sbr1.Name = "sbr1"
         Me.sbr1.Size = New System.Drawing.Size(199, 20)
         Me.sbr1.TabIndex = 0
-        Me.sbr1.Visible = false
+        Me.sbr1.Visible = False
         '
         'RichTextBox1
         '
@@ -705,11 +667,11 @@ Partial Class Form1
         Me.RichTextBox1.Size = New System.Drawing.Size(262, 40)
         Me.RichTextBox1.TabIndex = 16
         Me.RichTextBox1.Text = ""
-        Me.RichTextBox1.Visible = false
+        Me.RichTextBox1.Visible = False
         '
         'ImageList1
         '
-        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"),System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
         Me.ImageList1.Images.SetKeyName(0, "File Audio.ico")
         Me.ImageList1.Images.SetKeyName(1, "1458270385_folder-close.png")
@@ -721,12 +683,12 @@ Partial Class Form1
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(545, 222)
         Me.GroupBox3.TabIndex = 4
-        Me.GroupBox3.TabStop = false
-        Me.GroupBox3.UseCompatibleTextRendering = true
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.UseCompatibleTextRendering = True
         '
         'SplitContainer1
         '
-        Me.SplitContainer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224,Byte),Integer), CType(CType(224,Byte),Integer), CType(CType(224,Byte),Integer))
+        Me.SplitContainer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.SplitContainer1.ImeMode = System.Windows.Forms.ImeMode.[On]
         Me.SplitContainer1.Location = New System.Drawing.Point(3, 10)
         Me.SplitContainer1.Name = "SplitContainer1"
@@ -742,22 +704,22 @@ Partial Class Form1
         Me.SplitContainer1.Size = New System.Drawing.Size(539, 211)
         Me.SplitContainer1.SplitterDistance = 167
         Me.SplitContainer1.TabIndex = 0
-        Me.SplitContainer1.TabStop = false
+        Me.SplitContainer1.TabStop = False
         '
         'ExpTree1
         '
-        Me.ExpTree1.AutoScroll = true
+        Me.ExpTree1.AutoScroll = True
         Me.ExpTree1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ExpTree1.ContextMenuStrip = Me.ContextMenuStrip1
         Me.ExpTree1.Cursor = System.Windows.Forms.Cursors.Default
         Me.ExpTree1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ExpTree1.Location = New System.Drawing.Point(0, 0)
         Me.ExpTree1.Name = "ExpTree1"
-        Me.ExpTree1.ShowHiddenFolders = false
-        Me.ExpTree1.ShowRootLines = false
+        Me.ExpTree1.ShowHiddenFolders = False
+        Me.ExpTree1.ShowRootLines = False
         Me.ExpTree1.Size = New System.Drawing.Size(167, 211)
         Me.ExpTree1.TabIndex = 3
-        Me.ExpTree1.TabStop = false
+        Me.ExpTree1.TabStop = False
         '
         'ContextMenuStrip1
         '
@@ -779,15 +741,15 @@ Partial Class Form1
         Me.lv1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lv1.LargeImageList = Me.ImageList1
         Me.lv1.Location = New System.Drawing.Point(0, 0)
-        Me.lv1.MultiSelect = false
+        Me.lv1.MultiSelect = False
         Me.lv1.Name = "lv1"
-        Me.lv1.ShowItemToolTips = true
+        Me.lv1.ShowItemToolTips = True
         Me.lv1.Size = New System.Drawing.Size(368, 211)
         Me.lv1.SmallImageList = Me.ImageList1
         Me.lv1.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.lv1.TabIndex = 6
-        Me.lv1.TabStop = false
-        Me.lv1.UseCompatibleStateImageBehavior = false
+        Me.lv1.TabStop = False
+        Me.lv1.UseCompatibleStateImageBehavior = False
         Me.lv1.View = System.Windows.Forms.View.Details
         '
         'ColumnHeaderName
@@ -814,7 +776,7 @@ Partial Class Form1
         '
         'stMensajes
         '
-        Me.stMensajes.AutoSize = false
+        Me.stMensajes.AutoSize = False
         Me.stMensajes.Dock = System.Windows.Forms.DockStyle.None
         Me.stMensajes.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
         Me.stMensajes.Location = New System.Drawing.Point(236, 170)
@@ -822,7 +784,7 @@ Partial Class Form1
         Me.stMensajes.Size = New System.Drawing.Size(211, 22)
         Me.stMensajes.TabIndex = 5
         Me.stMensajes.Text = "StatusStrip1"
-        Me.stMensajes.Visible = false
+        Me.stMensajes.Visible = False
         '
         'ToolStripStatusLabel1
         '
@@ -866,608 +828,608 @@ Partial Class Form1
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(604, 300)
         Me.GroupBox4.TabIndex = 8
-        Me.GroupBox4.TabStop = false
-        Me.GroupBox4.UseCompatibleTextRendering = true
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.UseCompatibleTextRendering = True
         '
         'btnm1_30
         '
-        Me.btnm1_30.AllowDrop = true
-        Me.btnm1_30.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_30.AllowDrop = True
+        Me.btnm1_30.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_30.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_30.FlatAppearance.BorderSize = 2
         Me.btnm1_30.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_30.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_30.ForeColor = System.Drawing.Color.White
         Me.btnm1_30.Location = New System.Drawing.Point(506, 239)
         Me.btnm1_30.Name = "btnm1_30"
         Me.btnm1_30.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_30.TabIndex = 0
-        Me.btnm1_30.TabStop = false
+        Me.btnm1_30.TabStop = False
         Me.btnm1_30.Tag = "noitem"
-        Me.btnm1_30.UseCompatibleTextRendering = true
-        Me.btnm1_30.UseVisualStyleBackColor = false
+        Me.btnm1_30.UseCompatibleTextRendering = True
+        Me.btnm1_30.UseVisualStyleBackColor = False
         '
         'btnm1_24
         '
-        Me.btnm1_24.AllowDrop = true
-        Me.btnm1_24.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_24.AllowDrop = True
+        Me.btnm1_24.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_24.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_24.FlatAppearance.BorderSize = 2
         Me.btnm1_24.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_24.ForeColor = System.Drawing.Color.White
         Me.btnm1_24.Location = New System.Drawing.Point(506, 186)
         Me.btnm1_24.Name = "btnm1_24"
         Me.btnm1_24.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_24.TabIndex = 0
-        Me.btnm1_24.TabStop = false
+        Me.btnm1_24.TabStop = False
         Me.btnm1_24.Tag = "noitem"
-        Me.btnm1_24.UseCompatibleTextRendering = true
-        Me.btnm1_24.UseVisualStyleBackColor = false
+        Me.btnm1_24.UseCompatibleTextRendering = True
+        Me.btnm1_24.UseVisualStyleBackColor = False
         '
         'btnm1_12
         '
-        Me.btnm1_12.AllowDrop = true
-        Me.btnm1_12.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_12.AllowDrop = True
+        Me.btnm1_12.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_12.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_12.FlatAppearance.BorderSize = 2
         Me.btnm1_12.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_12.ForeColor = System.Drawing.Color.White
         Me.btnm1_12.Location = New System.Drawing.Point(506, 80)
         Me.btnm1_12.Name = "btnm1_12"
         Me.btnm1_12.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_12.TabIndex = 0
-        Me.btnm1_12.TabStop = false
+        Me.btnm1_12.TabStop = False
         Me.btnm1_12.Tag = "noitem"
-        Me.btnm1_12.UseCompatibleTextRendering = true
-        Me.btnm1_12.UseVisualStyleBackColor = false
+        Me.btnm1_12.UseCompatibleTextRendering = True
+        Me.btnm1_12.UseVisualStyleBackColor = False
         '
         'btnm1_18
         '
-        Me.btnm1_18.AllowDrop = true
-        Me.btnm1_18.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_18.AllowDrop = True
+        Me.btnm1_18.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_18.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_18.FlatAppearance.BorderSize = 2
         Me.btnm1_18.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_18.ForeColor = System.Drawing.Color.White
         Me.btnm1_18.Location = New System.Drawing.Point(506, 133)
         Me.btnm1_18.Name = "btnm1_18"
         Me.btnm1_18.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_18.TabIndex = 0
-        Me.btnm1_18.TabStop = false
+        Me.btnm1_18.TabStop = False
         Me.btnm1_18.Tag = "noitem"
-        Me.btnm1_18.UseCompatibleTextRendering = true
-        Me.btnm1_18.UseVisualStyleBackColor = false
+        Me.btnm1_18.UseCompatibleTextRendering = True
+        Me.btnm1_18.UseVisualStyleBackColor = False
         '
         'btnm1_6
         '
-        Me.btnm1_6.AllowDrop = true
-        Me.btnm1_6.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_6.AllowDrop = True
+        Me.btnm1_6.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_6.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_6.FlatAppearance.BorderSize = 2
         Me.btnm1_6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_6.ForeColor = System.Drawing.Color.White
         Me.btnm1_6.Location = New System.Drawing.Point(506, 27)
         Me.btnm1_6.Name = "btnm1_6"
         Me.btnm1_6.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_6.TabIndex = 0
-        Me.btnm1_6.TabStop = false
+        Me.btnm1_6.TabStop = False
         Me.btnm1_6.Tag = "noitem"
-        Me.btnm1_6.UseCompatibleTextRendering = true
-        Me.btnm1_6.UseVisualStyleBackColor = false
+        Me.btnm1_6.UseCompatibleTextRendering = True
+        Me.btnm1_6.UseVisualStyleBackColor = False
         '
         'btnm1_28
         '
-        Me.btnm1_28.AllowDrop = true
-        Me.btnm1_28.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_28.AllowDrop = True
+        Me.btnm1_28.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_28.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_28.FlatAppearance.BorderSize = 2
         Me.btnm1_28.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_28.ForeColor = System.Drawing.Color.White
         Me.btnm1_28.Location = New System.Drawing.Point(308, 239)
         Me.btnm1_28.Name = "btnm1_28"
         Me.btnm1_28.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_28.TabIndex = 0
-        Me.btnm1_28.TabStop = false
+        Me.btnm1_28.TabStop = False
         Me.btnm1_28.Tag = "noitem"
-        Me.btnm1_28.UseCompatibleTextRendering = true
-        Me.btnm1_28.UseVisualStyleBackColor = false
+        Me.btnm1_28.UseCompatibleTextRendering = True
+        Me.btnm1_28.UseVisualStyleBackColor = False
         '
         'btnm1_22
         '
-        Me.btnm1_22.AllowDrop = true
-        Me.btnm1_22.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_22.AllowDrop = True
+        Me.btnm1_22.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_22.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_22.FlatAppearance.BorderSize = 2
         Me.btnm1_22.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_22.ForeColor = System.Drawing.Color.White
         Me.btnm1_22.Location = New System.Drawing.Point(308, 186)
         Me.btnm1_22.Name = "btnm1_22"
         Me.btnm1_22.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_22.TabIndex = 0
-        Me.btnm1_22.TabStop = false
+        Me.btnm1_22.TabStop = False
         Me.btnm1_22.Tag = "noitem"
-        Me.btnm1_22.UseCompatibleTextRendering = true
-        Me.btnm1_22.UseVisualStyleBackColor = false
+        Me.btnm1_22.UseCompatibleTextRendering = True
+        Me.btnm1_22.UseVisualStyleBackColor = False
         '
         'btnm1_10
         '
-        Me.btnm1_10.AllowDrop = true
-        Me.btnm1_10.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_10.AllowDrop = True
+        Me.btnm1_10.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_10.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_10.FlatAppearance.BorderSize = 2
         Me.btnm1_10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_10.ForeColor = System.Drawing.Color.White
         Me.btnm1_10.Location = New System.Drawing.Point(308, 80)
         Me.btnm1_10.Name = "btnm1_10"
         Me.btnm1_10.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_10.TabIndex = 0
-        Me.btnm1_10.TabStop = false
+        Me.btnm1_10.TabStop = False
         Me.btnm1_10.Tag = "noitem"
-        Me.btnm1_10.UseCompatibleTextRendering = true
-        Me.btnm1_10.UseVisualStyleBackColor = false
+        Me.btnm1_10.UseCompatibleTextRendering = True
+        Me.btnm1_10.UseVisualStyleBackColor = False
         '
         'btnm1_16
         '
-        Me.btnm1_16.AllowDrop = true
-        Me.btnm1_16.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_16.AllowDrop = True
+        Me.btnm1_16.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_16.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_16.FlatAppearance.BorderSize = 2
         Me.btnm1_16.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_16.ForeColor = System.Drawing.Color.White
         Me.btnm1_16.Location = New System.Drawing.Point(308, 133)
         Me.btnm1_16.Name = "btnm1_16"
         Me.btnm1_16.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_16.TabIndex = 0
-        Me.btnm1_16.TabStop = false
+        Me.btnm1_16.TabStop = False
         Me.btnm1_16.Tag = "noitem"
-        Me.btnm1_16.UseCompatibleTextRendering = true
-        Me.btnm1_16.UseVisualStyleBackColor = false
+        Me.btnm1_16.UseCompatibleTextRendering = True
+        Me.btnm1_16.UseVisualStyleBackColor = False
         '
         'btnm1_4
         '
-        Me.btnm1_4.AllowDrop = true
-        Me.btnm1_4.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_4.AllowDrop = True
+        Me.btnm1_4.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_4.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_4.FlatAppearance.BorderSize = 2
         Me.btnm1_4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_4.ForeColor = System.Drawing.Color.White
         Me.btnm1_4.Location = New System.Drawing.Point(308, 27)
         Me.btnm1_4.Name = "btnm1_4"
         Me.btnm1_4.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_4.TabIndex = 0
-        Me.btnm1_4.TabStop = false
+        Me.btnm1_4.TabStop = False
         Me.btnm1_4.Tag = "noitem"
-        Me.btnm1_4.UseCompatibleTextRendering = true
-        Me.btnm1_4.UseVisualStyleBackColor = false
+        Me.btnm1_4.UseCompatibleTextRendering = True
+        Me.btnm1_4.UseVisualStyleBackColor = False
         '
         'btnm1_26
         '
-        Me.btnm1_26.AllowDrop = true
-        Me.btnm1_26.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_26.AllowDrop = True
+        Me.btnm1_26.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_26.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_26.FlatAppearance.BorderSize = 2
         Me.btnm1_26.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_26.ForeColor = System.Drawing.Color.White
         Me.btnm1_26.Location = New System.Drawing.Point(110, 239)
         Me.btnm1_26.Name = "btnm1_26"
         Me.btnm1_26.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_26.TabIndex = 0
-        Me.btnm1_26.TabStop = false
+        Me.btnm1_26.TabStop = False
         Me.btnm1_26.Tag = "noitem"
-        Me.btnm1_26.UseCompatibleTextRendering = true
-        Me.btnm1_26.UseVisualStyleBackColor = false
+        Me.btnm1_26.UseCompatibleTextRendering = True
+        Me.btnm1_26.UseVisualStyleBackColor = False
         '
         'btnm1_20
         '
-        Me.btnm1_20.AllowDrop = true
-        Me.btnm1_20.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_20.AllowDrop = True
+        Me.btnm1_20.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_20.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_20.FlatAppearance.BorderSize = 2
         Me.btnm1_20.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_20.ForeColor = System.Drawing.Color.White
         Me.btnm1_20.Location = New System.Drawing.Point(110, 186)
         Me.btnm1_20.Name = "btnm1_20"
         Me.btnm1_20.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_20.TabIndex = 0
-        Me.btnm1_20.TabStop = false
+        Me.btnm1_20.TabStop = False
         Me.btnm1_20.Tag = "noitem"
-        Me.btnm1_20.UseCompatibleTextRendering = true
-        Me.btnm1_20.UseVisualStyleBackColor = false
+        Me.btnm1_20.UseCompatibleTextRendering = True
+        Me.btnm1_20.UseVisualStyleBackColor = False
         '
         'btnm1_8
         '
-        Me.btnm1_8.AllowDrop = true
-        Me.btnm1_8.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_8.AllowDrop = True
+        Me.btnm1_8.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_8.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_8.FlatAppearance.BorderSize = 2
         Me.btnm1_8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_8.ForeColor = System.Drawing.Color.White
         Me.btnm1_8.Location = New System.Drawing.Point(110, 80)
         Me.btnm1_8.Name = "btnm1_8"
         Me.btnm1_8.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_8.TabIndex = 0
-        Me.btnm1_8.TabStop = false
+        Me.btnm1_8.TabStop = False
         Me.btnm1_8.Tag = "noitem"
-        Me.btnm1_8.UseCompatibleTextRendering = true
-        Me.btnm1_8.UseVisualStyleBackColor = false
+        Me.btnm1_8.UseCompatibleTextRendering = True
+        Me.btnm1_8.UseVisualStyleBackColor = False
         '
         'btnm1_14
         '
-        Me.btnm1_14.AllowDrop = true
-        Me.btnm1_14.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_14.AllowDrop = True
+        Me.btnm1_14.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_14.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_14.FlatAppearance.BorderSize = 2
         Me.btnm1_14.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_14.ForeColor = System.Drawing.Color.White
         Me.btnm1_14.Location = New System.Drawing.Point(110, 133)
         Me.btnm1_14.Name = "btnm1_14"
         Me.btnm1_14.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_14.TabIndex = 0
-        Me.btnm1_14.TabStop = false
+        Me.btnm1_14.TabStop = False
         Me.btnm1_14.Tag = "noitem"
-        Me.btnm1_14.UseCompatibleTextRendering = true
-        Me.btnm1_14.UseVisualStyleBackColor = false
+        Me.btnm1_14.UseCompatibleTextRendering = True
+        Me.btnm1_14.UseVisualStyleBackColor = False
         '
         'btnm1_2
         '
-        Me.btnm1_2.AllowDrop = true
-        Me.btnm1_2.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_2.AllowDrop = True
+        Me.btnm1_2.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_2.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_2.FlatAppearance.BorderSize = 2
         Me.btnm1_2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_2.ForeColor = System.Drawing.Color.White
         Me.btnm1_2.Location = New System.Drawing.Point(110, 27)
         Me.btnm1_2.Name = "btnm1_2"
         Me.btnm1_2.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_2.TabIndex = 0
-        Me.btnm1_2.TabStop = false
+        Me.btnm1_2.TabStop = False
         Me.btnm1_2.Tag = "noitem"
-        Me.btnm1_2.UseCompatibleTextRendering = true
-        Me.btnm1_2.UseVisualStyleBackColor = false
+        Me.btnm1_2.UseCompatibleTextRendering = True
+        Me.btnm1_2.UseVisualStyleBackColor = False
         '
         'btnm1_29
         '
-        Me.btnm1_29.AllowDrop = true
-        Me.btnm1_29.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_29.AllowDrop = True
+        Me.btnm1_29.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_29.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_29.FlatAppearance.BorderSize = 2
         Me.btnm1_29.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_29.ForeColor = System.Drawing.Color.White
         Me.btnm1_29.Location = New System.Drawing.Point(407, 239)
         Me.btnm1_29.Name = "btnm1_29"
         Me.btnm1_29.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_29.TabIndex = 0
-        Me.btnm1_29.TabStop = false
+        Me.btnm1_29.TabStop = False
         Me.btnm1_29.Tag = "noitem"
-        Me.btnm1_29.UseCompatibleTextRendering = true
-        Me.btnm1_29.UseVisualStyleBackColor = false
+        Me.btnm1_29.UseCompatibleTextRendering = True
+        Me.btnm1_29.UseVisualStyleBackColor = False
         '
         'btnm1_23
         '
-        Me.btnm1_23.AllowDrop = true
-        Me.btnm1_23.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_23.AllowDrop = True
+        Me.btnm1_23.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_23.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_23.FlatAppearance.BorderSize = 2
         Me.btnm1_23.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_23.ForeColor = System.Drawing.Color.White
         Me.btnm1_23.Location = New System.Drawing.Point(407, 186)
         Me.btnm1_23.Name = "btnm1_23"
         Me.btnm1_23.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_23.TabIndex = 0
-        Me.btnm1_23.TabStop = false
+        Me.btnm1_23.TabStop = False
         Me.btnm1_23.Tag = "noitem"
-        Me.btnm1_23.UseCompatibleTextRendering = true
-        Me.btnm1_23.UseVisualStyleBackColor = false
+        Me.btnm1_23.UseCompatibleTextRendering = True
+        Me.btnm1_23.UseVisualStyleBackColor = False
         '
         'btnm1_11
         '
-        Me.btnm1_11.AllowDrop = true
-        Me.btnm1_11.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_11.AllowDrop = True
+        Me.btnm1_11.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_11.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_11.FlatAppearance.BorderSize = 2
         Me.btnm1_11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_11.ForeColor = System.Drawing.Color.White
         Me.btnm1_11.Location = New System.Drawing.Point(407, 80)
         Me.btnm1_11.Name = "btnm1_11"
         Me.btnm1_11.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_11.TabIndex = 0
-        Me.btnm1_11.TabStop = false
+        Me.btnm1_11.TabStop = False
         Me.btnm1_11.Tag = "noitem"
-        Me.btnm1_11.UseCompatibleTextRendering = true
-        Me.btnm1_11.UseVisualStyleBackColor = false
+        Me.btnm1_11.UseCompatibleTextRendering = True
+        Me.btnm1_11.UseVisualStyleBackColor = False
         '
         'btnm1_17
         '
-        Me.btnm1_17.AllowDrop = true
-        Me.btnm1_17.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_17.AllowDrop = True
+        Me.btnm1_17.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_17.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_17.FlatAppearance.BorderSize = 2
         Me.btnm1_17.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_17.ForeColor = System.Drawing.Color.White
         Me.btnm1_17.Location = New System.Drawing.Point(407, 133)
         Me.btnm1_17.Name = "btnm1_17"
         Me.btnm1_17.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_17.TabIndex = 0
-        Me.btnm1_17.TabStop = false
+        Me.btnm1_17.TabStop = False
         Me.btnm1_17.Tag = "noitem"
-        Me.btnm1_17.UseCompatibleTextRendering = true
-        Me.btnm1_17.UseVisualStyleBackColor = false
+        Me.btnm1_17.UseCompatibleTextRendering = True
+        Me.btnm1_17.UseVisualStyleBackColor = False
         '
         'btnm1_5
         '
-        Me.btnm1_5.AllowDrop = true
-        Me.btnm1_5.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_5.AllowDrop = True
+        Me.btnm1_5.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_5.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_5.FlatAppearance.BorderSize = 2
         Me.btnm1_5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_5.ForeColor = System.Drawing.Color.White
         Me.btnm1_5.Location = New System.Drawing.Point(407, 27)
         Me.btnm1_5.Name = "btnm1_5"
         Me.btnm1_5.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_5.TabIndex = 0
-        Me.btnm1_5.TabStop = false
+        Me.btnm1_5.TabStop = False
         Me.btnm1_5.Tag = "noitem"
-        Me.btnm1_5.UseCompatibleTextRendering = true
-        Me.btnm1_5.UseVisualStyleBackColor = false
+        Me.btnm1_5.UseCompatibleTextRendering = True
+        Me.btnm1_5.UseVisualStyleBackColor = False
         '
         'btnm1_27
         '
-        Me.btnm1_27.AllowDrop = true
-        Me.btnm1_27.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_27.AllowDrop = True
+        Me.btnm1_27.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_27.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_27.FlatAppearance.BorderSize = 2
         Me.btnm1_27.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_27.ForeColor = System.Drawing.Color.White
         Me.btnm1_27.Location = New System.Drawing.Point(209, 239)
         Me.btnm1_27.Name = "btnm1_27"
         Me.btnm1_27.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_27.TabIndex = 0
-        Me.btnm1_27.TabStop = false
+        Me.btnm1_27.TabStop = False
         Me.btnm1_27.Tag = "noitem"
-        Me.btnm1_27.UseCompatibleTextRendering = true
-        Me.btnm1_27.UseVisualStyleBackColor = false
+        Me.btnm1_27.UseCompatibleTextRendering = True
+        Me.btnm1_27.UseVisualStyleBackColor = False
         '
         'btnm1_21
         '
-        Me.btnm1_21.AllowDrop = true
-        Me.btnm1_21.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_21.AllowDrop = True
+        Me.btnm1_21.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_21.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_21.FlatAppearance.BorderSize = 2
         Me.btnm1_21.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_21.ForeColor = System.Drawing.Color.White
         Me.btnm1_21.Location = New System.Drawing.Point(209, 186)
         Me.btnm1_21.Name = "btnm1_21"
         Me.btnm1_21.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_21.TabIndex = 0
-        Me.btnm1_21.TabStop = false
+        Me.btnm1_21.TabStop = False
         Me.btnm1_21.Tag = "noitem"
-        Me.btnm1_21.UseCompatibleTextRendering = true
-        Me.btnm1_21.UseVisualStyleBackColor = false
+        Me.btnm1_21.UseCompatibleTextRendering = True
+        Me.btnm1_21.UseVisualStyleBackColor = False
         '
         'btnm1_9
         '
-        Me.btnm1_9.AllowDrop = true
-        Me.btnm1_9.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_9.AllowDrop = True
+        Me.btnm1_9.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_9.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_9.FlatAppearance.BorderSize = 2
         Me.btnm1_9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_9.ForeColor = System.Drawing.Color.White
         Me.btnm1_9.Location = New System.Drawing.Point(209, 80)
         Me.btnm1_9.Name = "btnm1_9"
         Me.btnm1_9.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_9.TabIndex = 0
-        Me.btnm1_9.TabStop = false
+        Me.btnm1_9.TabStop = False
         Me.btnm1_9.Tag = "noitem"
-        Me.btnm1_9.UseCompatibleTextRendering = true
-        Me.btnm1_9.UseVisualStyleBackColor = false
+        Me.btnm1_9.UseCompatibleTextRendering = True
+        Me.btnm1_9.UseVisualStyleBackColor = False
         '
         'btnm1_15
         '
-        Me.btnm1_15.AllowDrop = true
-        Me.btnm1_15.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_15.AllowDrop = True
+        Me.btnm1_15.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_15.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_15.FlatAppearance.BorderSize = 2
         Me.btnm1_15.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_15.ForeColor = System.Drawing.Color.White
         Me.btnm1_15.Location = New System.Drawing.Point(209, 133)
         Me.btnm1_15.Name = "btnm1_15"
         Me.btnm1_15.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_15.TabIndex = 0
-        Me.btnm1_15.TabStop = false
+        Me.btnm1_15.TabStop = False
         Me.btnm1_15.Tag = "noitem"
-        Me.btnm1_15.UseCompatibleTextRendering = true
-        Me.btnm1_15.UseVisualStyleBackColor = false
+        Me.btnm1_15.UseCompatibleTextRendering = True
+        Me.btnm1_15.UseVisualStyleBackColor = False
         '
         'btnm1_3
         '
-        Me.btnm1_3.AllowDrop = true
-        Me.btnm1_3.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_3.AllowDrop = True
+        Me.btnm1_3.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_3.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_3.FlatAppearance.BorderSize = 2
         Me.btnm1_3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_3.ForeColor = System.Drawing.Color.White
         Me.btnm1_3.Location = New System.Drawing.Point(209, 27)
         Me.btnm1_3.Name = "btnm1_3"
         Me.btnm1_3.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_3.TabIndex = 0
-        Me.btnm1_3.TabStop = false
+        Me.btnm1_3.TabStop = False
         Me.btnm1_3.Tag = "noitem"
-        Me.btnm1_3.UseCompatibleTextRendering = true
-        Me.btnm1_3.UseVisualStyleBackColor = false
+        Me.btnm1_3.UseCompatibleTextRendering = True
+        Me.btnm1_3.UseVisualStyleBackColor = False
         '
         'btnm1_25
         '
-        Me.btnm1_25.AllowDrop = true
-        Me.btnm1_25.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_25.AllowDrop = True
+        Me.btnm1_25.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_25.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_25.FlatAppearance.BorderSize = 2
         Me.btnm1_25.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_25.ForeColor = System.Drawing.Color.White
         Me.btnm1_25.Location = New System.Drawing.Point(11, 239)
         Me.btnm1_25.Name = "btnm1_25"
         Me.btnm1_25.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_25.TabIndex = 0
-        Me.btnm1_25.TabStop = false
+        Me.btnm1_25.TabStop = False
         Me.btnm1_25.Tag = "noitem"
-        Me.btnm1_25.UseCompatibleTextRendering = true
-        Me.btnm1_25.UseVisualStyleBackColor = false
+        Me.btnm1_25.UseCompatibleTextRendering = True
+        Me.btnm1_25.UseVisualStyleBackColor = False
         '
         'btnm1_19
         '
-        Me.btnm1_19.AllowDrop = true
-        Me.btnm1_19.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_19.AllowDrop = True
+        Me.btnm1_19.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_19.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_19.FlatAppearance.BorderSize = 2
         Me.btnm1_19.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_19.ForeColor = System.Drawing.Color.White
         Me.btnm1_19.Location = New System.Drawing.Point(11, 186)
         Me.btnm1_19.Name = "btnm1_19"
         Me.btnm1_19.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_19.TabIndex = 0
-        Me.btnm1_19.TabStop = false
+        Me.btnm1_19.TabStop = False
         Me.btnm1_19.Tag = "noitem"
-        Me.btnm1_19.UseCompatibleTextRendering = true
-        Me.btnm1_19.UseVisualStyleBackColor = false
+        Me.btnm1_19.UseCompatibleTextRendering = True
+        Me.btnm1_19.UseVisualStyleBackColor = False
         '
         'btnm1_7
         '
-        Me.btnm1_7.AllowDrop = true
-        Me.btnm1_7.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_7.AllowDrop = True
+        Me.btnm1_7.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_7.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_7.FlatAppearance.BorderSize = 2
         Me.btnm1_7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_7.ForeColor = System.Drawing.Color.White
         Me.btnm1_7.Location = New System.Drawing.Point(11, 80)
         Me.btnm1_7.Name = "btnm1_7"
         Me.btnm1_7.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_7.TabIndex = 0
-        Me.btnm1_7.TabStop = false
+        Me.btnm1_7.TabStop = False
         Me.btnm1_7.Tag = "noitem"
-        Me.btnm1_7.UseCompatibleTextRendering = true
-        Me.btnm1_7.UseVisualStyleBackColor = false
+        Me.btnm1_7.UseCompatibleTextRendering = True
+        Me.btnm1_7.UseVisualStyleBackColor = False
         '
         'btnm1_13
         '
-        Me.btnm1_13.AllowDrop = true
-        Me.btnm1_13.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_13.AllowDrop = True
+        Me.btnm1_13.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_13.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_13.FlatAppearance.BorderSize = 2
         Me.btnm1_13.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_13.ForeColor = System.Drawing.Color.White
         Me.btnm1_13.Location = New System.Drawing.Point(11, 133)
         Me.btnm1_13.Name = "btnm1_13"
         Me.btnm1_13.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_13.TabIndex = 0
-        Me.btnm1_13.TabStop = false
+        Me.btnm1_13.TabStop = False
         Me.btnm1_13.Tag = "noitem"
-        Me.btnm1_13.UseCompatibleTextRendering = true
-        Me.btnm1_13.UseVisualStyleBackColor = false
+        Me.btnm1_13.UseCompatibleTextRendering = True
+        Me.btnm1_13.UseVisualStyleBackColor = False
         '
         'btnm1_1
         '
-        Me.btnm1_1.AllowDrop = true
-        Me.btnm1_1.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm1_1.AllowDrop = True
+        Me.btnm1_1.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm1_1.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm1_1.FlatAppearance.BorderSize = 2
         Me.btnm1_1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm1_1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm1_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm1_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm1_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm1_1.ForeColor = System.Drawing.Color.White
         Me.btnm1_1.Location = New System.Drawing.Point(11, 27)
         Me.btnm1_1.Name = "btnm1_1"
         Me.btnm1_1.Size = New System.Drawing.Size(88, 45)
         Me.btnm1_1.TabIndex = 0
-        Me.btnm1_1.TabStop = false
+        Me.btnm1_1.TabStop = False
         Me.btnm1_1.Tag = "noitem"
-        Me.btnm1_1.UseCompatibleTextRendering = true
-        Me.btnm1_1.UseVisualStyleBackColor = false
+        Me.btnm1_1.UseCompatibleTextRendering = True
+        Me.btnm1_1.UseVisualStyleBackColor = False
         '
         'menu1
         '
@@ -1477,7 +1439,7 @@ Partial Class Form1
         '
         'LimpiarBotoneraToolStripMenuItem
         '
-        Me.LimpiarBotoneraToolStripMenuItem.Enabled = false
+        Me.LimpiarBotoneraToolStripMenuItem.Enabled = False
         Me.LimpiarBotoneraToolStripMenuItem.Image = Global.controldeaire.My.Resources.Resources.clear
         Me.LimpiarBotoneraToolStripMenuItem.Name = "LimpiarBotoneraToolStripMenuItem"
         Me.LimpiarBotoneraToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
@@ -1497,7 +1459,7 @@ Partial Class Form1
         '
         'GuardarBotoneraToolStripMenuItem
         '
-        Me.GuardarBotoneraToolStripMenuItem.Enabled = false
+        Me.GuardarBotoneraToolStripMenuItem.Enabled = False
         Me.GuardarBotoneraToolStripMenuItem.Image = Global.controldeaire.My.Resources.Resources.save16
         Me.GuardarBotoneraToolStripMenuItem.Name = "GuardarBotoneraToolStripMenuItem"
         Me.GuardarBotoneraToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
@@ -1539,612 +1501,612 @@ Partial Class Form1
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(604, 300)
         Me.GroupBox5.TabIndex = 9
-        Me.GroupBox5.TabStop = false
-        Me.GroupBox5.UseCompatibleTextRendering = true
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.UseCompatibleTextRendering = True
         '
         'btnm2_30
         '
-        Me.btnm2_30.AllowDrop = true
-        Me.btnm2_30.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_30.AllowDrop = True
+        Me.btnm2_30.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_30.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_30.FlatAppearance.BorderSize = 2
         Me.btnm2_30.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_30.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_30.ForeColor = System.Drawing.Color.White
         Me.btnm2_30.Location = New System.Drawing.Point(506, 240)
         Me.btnm2_30.Name = "btnm2_30"
         Me.btnm2_30.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_30.TabIndex = 0
-        Me.btnm2_30.TabStop = false
+        Me.btnm2_30.TabStop = False
         Me.btnm2_30.Tag = "noitem"
-        Me.btnm2_30.UseCompatibleTextRendering = true
-        Me.btnm2_30.UseVisualStyleBackColor = false
+        Me.btnm2_30.UseCompatibleTextRendering = True
+        Me.btnm2_30.UseVisualStyleBackColor = False
         '
         'btnm2_24
         '
-        Me.btnm2_24.AllowDrop = true
-        Me.btnm2_24.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_24.AllowDrop = True
+        Me.btnm2_24.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_24.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_24.FlatAppearance.BorderSize = 2
         Me.btnm2_24.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_24.ForeColor = System.Drawing.Color.White
         Me.btnm2_24.Location = New System.Drawing.Point(506, 187)
         Me.btnm2_24.Name = "btnm2_24"
         Me.btnm2_24.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_24.TabIndex = 0
-        Me.btnm2_24.TabStop = false
+        Me.btnm2_24.TabStop = False
         Me.btnm2_24.Tag = "noitem"
-        Me.btnm2_24.UseCompatibleTextRendering = true
-        Me.btnm2_24.UseVisualStyleBackColor = false
+        Me.btnm2_24.UseCompatibleTextRendering = True
+        Me.btnm2_24.UseVisualStyleBackColor = False
         '
         'btnm2_12
         '
-        Me.btnm2_12.AllowDrop = true
-        Me.btnm2_12.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_12.AllowDrop = True
+        Me.btnm2_12.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_12.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_12.FlatAppearance.BorderSize = 2
         Me.btnm2_12.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_12.ForeColor = System.Drawing.Color.White
         Me.btnm2_12.Location = New System.Drawing.Point(506, 81)
         Me.btnm2_12.Name = "btnm2_12"
         Me.btnm2_12.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_12.TabIndex = 0
-        Me.btnm2_12.TabStop = false
+        Me.btnm2_12.TabStop = False
         Me.btnm2_12.Tag = "noitem"
-        Me.btnm2_12.UseCompatibleTextRendering = true
-        Me.btnm2_12.UseVisualStyleBackColor = false
+        Me.btnm2_12.UseCompatibleTextRendering = True
+        Me.btnm2_12.UseVisualStyleBackColor = False
         '
         'btnm2_18
         '
-        Me.btnm2_18.AllowDrop = true
-        Me.btnm2_18.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_18.AllowDrop = True
+        Me.btnm2_18.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_18.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_18.FlatAppearance.BorderSize = 2
         Me.btnm2_18.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_18.ForeColor = System.Drawing.Color.White
         Me.btnm2_18.Location = New System.Drawing.Point(506, 134)
         Me.btnm2_18.Name = "btnm2_18"
         Me.btnm2_18.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_18.TabIndex = 0
-        Me.btnm2_18.TabStop = false
+        Me.btnm2_18.TabStop = False
         Me.btnm2_18.Tag = "noitem"
-        Me.btnm2_18.UseCompatibleTextRendering = true
-        Me.btnm2_18.UseVisualStyleBackColor = false
+        Me.btnm2_18.UseCompatibleTextRendering = True
+        Me.btnm2_18.UseVisualStyleBackColor = False
         '
         'btnm2_6
         '
-        Me.btnm2_6.AllowDrop = true
-        Me.btnm2_6.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_6.AllowDrop = True
+        Me.btnm2_6.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_6.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_6.FlatAppearance.BorderSize = 2
         Me.btnm2_6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_6.ForeColor = System.Drawing.Color.White
         Me.btnm2_6.Location = New System.Drawing.Point(506, 28)
         Me.btnm2_6.Name = "btnm2_6"
         Me.btnm2_6.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_6.TabIndex = 0
-        Me.btnm2_6.TabStop = false
+        Me.btnm2_6.TabStop = False
         Me.btnm2_6.Tag = "noitem"
-        Me.btnm2_6.UseCompatibleTextRendering = true
-        Me.btnm2_6.UseVisualStyleBackColor = false
+        Me.btnm2_6.UseCompatibleTextRendering = True
+        Me.btnm2_6.UseVisualStyleBackColor = False
         '
         'btnm2_28
         '
-        Me.btnm2_28.AllowDrop = true
-        Me.btnm2_28.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_28.AllowDrop = True
+        Me.btnm2_28.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_28.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_28.FlatAppearance.BorderSize = 2
         Me.btnm2_28.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_28.ForeColor = System.Drawing.Color.White
         Me.btnm2_28.Location = New System.Drawing.Point(308, 240)
         Me.btnm2_28.Name = "btnm2_28"
         Me.btnm2_28.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_28.TabIndex = 0
-        Me.btnm2_28.TabStop = false
+        Me.btnm2_28.TabStop = False
         Me.btnm2_28.Tag = "noitem"
-        Me.btnm2_28.UseCompatibleTextRendering = true
-        Me.btnm2_28.UseVisualStyleBackColor = false
+        Me.btnm2_28.UseCompatibleTextRendering = True
+        Me.btnm2_28.UseVisualStyleBackColor = False
         '
         'btnm2_22
         '
-        Me.btnm2_22.AllowDrop = true
-        Me.btnm2_22.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_22.AllowDrop = True
+        Me.btnm2_22.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_22.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_22.FlatAppearance.BorderSize = 2
         Me.btnm2_22.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_22.ForeColor = System.Drawing.Color.White
         Me.btnm2_22.Location = New System.Drawing.Point(308, 187)
         Me.btnm2_22.Name = "btnm2_22"
         Me.btnm2_22.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_22.TabIndex = 0
-        Me.btnm2_22.TabStop = false
+        Me.btnm2_22.TabStop = False
         Me.btnm2_22.Tag = "noitem"
-        Me.btnm2_22.UseCompatibleTextRendering = true
-        Me.btnm2_22.UseVisualStyleBackColor = false
+        Me.btnm2_22.UseCompatibleTextRendering = True
+        Me.btnm2_22.UseVisualStyleBackColor = False
         '
         'btnm2_10
         '
-        Me.btnm2_10.AllowDrop = true
-        Me.btnm2_10.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_10.AllowDrop = True
+        Me.btnm2_10.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_10.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_10.FlatAppearance.BorderSize = 2
         Me.btnm2_10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_10.ForeColor = System.Drawing.Color.White
         Me.btnm2_10.Location = New System.Drawing.Point(308, 81)
         Me.btnm2_10.Name = "btnm2_10"
         Me.btnm2_10.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_10.TabIndex = 0
-        Me.btnm2_10.TabStop = false
+        Me.btnm2_10.TabStop = False
         Me.btnm2_10.Tag = "noitem"
-        Me.btnm2_10.UseCompatibleTextRendering = true
-        Me.btnm2_10.UseVisualStyleBackColor = false
+        Me.btnm2_10.UseCompatibleTextRendering = True
+        Me.btnm2_10.UseVisualStyleBackColor = False
         '
         'btnm2_16
         '
-        Me.btnm2_16.AllowDrop = true
-        Me.btnm2_16.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_16.AllowDrop = True
+        Me.btnm2_16.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_16.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_16.FlatAppearance.BorderSize = 2
         Me.btnm2_16.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_16.ForeColor = System.Drawing.Color.White
         Me.btnm2_16.Location = New System.Drawing.Point(308, 134)
         Me.btnm2_16.Name = "btnm2_16"
         Me.btnm2_16.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_16.TabIndex = 0
-        Me.btnm2_16.TabStop = false
+        Me.btnm2_16.TabStop = False
         Me.btnm2_16.Tag = "noitem"
-        Me.btnm2_16.UseCompatibleTextRendering = true
-        Me.btnm2_16.UseVisualStyleBackColor = false
+        Me.btnm2_16.UseCompatibleTextRendering = True
+        Me.btnm2_16.UseVisualStyleBackColor = False
         '
         'btnm2_4
         '
-        Me.btnm2_4.AllowDrop = true
-        Me.btnm2_4.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_4.AllowDrop = True
+        Me.btnm2_4.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_4.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_4.FlatAppearance.BorderSize = 2
         Me.btnm2_4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_4.ForeColor = System.Drawing.Color.White
         Me.btnm2_4.Location = New System.Drawing.Point(308, 28)
         Me.btnm2_4.Name = "btnm2_4"
         Me.btnm2_4.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_4.TabIndex = 0
-        Me.btnm2_4.TabStop = false
+        Me.btnm2_4.TabStop = False
         Me.btnm2_4.Tag = "noitem"
-        Me.btnm2_4.UseCompatibleTextRendering = true
-        Me.btnm2_4.UseVisualStyleBackColor = false
+        Me.btnm2_4.UseCompatibleTextRendering = True
+        Me.btnm2_4.UseVisualStyleBackColor = False
         '
         'btnm2_26
         '
-        Me.btnm2_26.AllowDrop = true
-        Me.btnm2_26.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_26.AllowDrop = True
+        Me.btnm2_26.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_26.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_26.FlatAppearance.BorderSize = 2
         Me.btnm2_26.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_26.ForeColor = System.Drawing.Color.White
         Me.btnm2_26.Location = New System.Drawing.Point(110, 240)
         Me.btnm2_26.Name = "btnm2_26"
         Me.btnm2_26.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_26.TabIndex = 0
-        Me.btnm2_26.TabStop = false
+        Me.btnm2_26.TabStop = False
         Me.btnm2_26.Tag = "noitem"
-        Me.btnm2_26.UseCompatibleTextRendering = true
-        Me.btnm2_26.UseVisualStyleBackColor = false
+        Me.btnm2_26.UseCompatibleTextRendering = True
+        Me.btnm2_26.UseVisualStyleBackColor = False
         '
         'btnm2_20
         '
-        Me.btnm2_20.AllowDrop = true
-        Me.btnm2_20.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_20.AllowDrop = True
+        Me.btnm2_20.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_20.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_20.FlatAppearance.BorderSize = 2
         Me.btnm2_20.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_20.ForeColor = System.Drawing.Color.White
         Me.btnm2_20.Location = New System.Drawing.Point(110, 187)
         Me.btnm2_20.Name = "btnm2_20"
         Me.btnm2_20.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_20.TabIndex = 0
-        Me.btnm2_20.TabStop = false
+        Me.btnm2_20.TabStop = False
         Me.btnm2_20.Tag = "noitem"
-        Me.btnm2_20.UseCompatibleTextRendering = true
-        Me.btnm2_20.UseVisualStyleBackColor = false
+        Me.btnm2_20.UseCompatibleTextRendering = True
+        Me.btnm2_20.UseVisualStyleBackColor = False
         '
         'btnm2_8
         '
-        Me.btnm2_8.AllowDrop = true
-        Me.btnm2_8.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_8.AllowDrop = True
+        Me.btnm2_8.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_8.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_8.FlatAppearance.BorderSize = 2
         Me.btnm2_8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_8.ForeColor = System.Drawing.Color.White
         Me.btnm2_8.Location = New System.Drawing.Point(110, 81)
         Me.btnm2_8.Name = "btnm2_8"
         Me.btnm2_8.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_8.TabIndex = 0
-        Me.btnm2_8.TabStop = false
+        Me.btnm2_8.TabStop = False
         Me.btnm2_8.Tag = "noitem"
-        Me.btnm2_8.UseCompatibleTextRendering = true
-        Me.btnm2_8.UseVisualStyleBackColor = false
+        Me.btnm2_8.UseCompatibleTextRendering = True
+        Me.btnm2_8.UseVisualStyleBackColor = False
         '
         'btnm2_14
         '
-        Me.btnm2_14.AllowDrop = true
-        Me.btnm2_14.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_14.AllowDrop = True
+        Me.btnm2_14.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_14.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_14.FlatAppearance.BorderSize = 2
         Me.btnm2_14.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_14.ForeColor = System.Drawing.Color.White
         Me.btnm2_14.Location = New System.Drawing.Point(110, 134)
         Me.btnm2_14.Name = "btnm2_14"
         Me.btnm2_14.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_14.TabIndex = 0
-        Me.btnm2_14.TabStop = false
+        Me.btnm2_14.TabStop = False
         Me.btnm2_14.Tag = "noitem"
-        Me.btnm2_14.UseCompatibleTextRendering = true
-        Me.btnm2_14.UseVisualStyleBackColor = false
+        Me.btnm2_14.UseCompatibleTextRendering = True
+        Me.btnm2_14.UseVisualStyleBackColor = False
         '
         'btnm2_2
         '
-        Me.btnm2_2.AllowDrop = true
-        Me.btnm2_2.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_2.AllowDrop = True
+        Me.btnm2_2.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_2.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_2.FlatAppearance.BorderSize = 2
         Me.btnm2_2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_2.ForeColor = System.Drawing.Color.White
         Me.btnm2_2.Location = New System.Drawing.Point(110, 28)
         Me.btnm2_2.Name = "btnm2_2"
         Me.btnm2_2.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_2.TabIndex = 0
-        Me.btnm2_2.TabStop = false
+        Me.btnm2_2.TabStop = False
         Me.btnm2_2.Tag = "noitem"
-        Me.btnm2_2.UseCompatibleTextRendering = true
-        Me.btnm2_2.UseVisualStyleBackColor = false
+        Me.btnm2_2.UseCompatibleTextRendering = True
+        Me.btnm2_2.UseVisualStyleBackColor = False
         '
         'btnm2_29
         '
-        Me.btnm2_29.AllowDrop = true
-        Me.btnm2_29.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_29.AllowDrop = True
+        Me.btnm2_29.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_29.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_29.FlatAppearance.BorderSize = 2
         Me.btnm2_29.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_29.ForeColor = System.Drawing.Color.White
         Me.btnm2_29.Location = New System.Drawing.Point(407, 240)
         Me.btnm2_29.Name = "btnm2_29"
         Me.btnm2_29.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_29.TabIndex = 0
-        Me.btnm2_29.TabStop = false
+        Me.btnm2_29.TabStop = False
         Me.btnm2_29.Tag = "noitem"
-        Me.btnm2_29.UseCompatibleTextRendering = true
-        Me.btnm2_29.UseVisualStyleBackColor = false
+        Me.btnm2_29.UseCompatibleTextRendering = True
+        Me.btnm2_29.UseVisualStyleBackColor = False
         '
         'btnm2_23
         '
-        Me.btnm2_23.AllowDrop = true
-        Me.btnm2_23.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_23.AllowDrop = True
+        Me.btnm2_23.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_23.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_23.FlatAppearance.BorderSize = 2
         Me.btnm2_23.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_23.ForeColor = System.Drawing.Color.White
         Me.btnm2_23.Location = New System.Drawing.Point(407, 187)
         Me.btnm2_23.Name = "btnm2_23"
         Me.btnm2_23.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_23.TabIndex = 0
-        Me.btnm2_23.TabStop = false
+        Me.btnm2_23.TabStop = False
         Me.btnm2_23.Tag = "noitem"
-        Me.btnm2_23.UseCompatibleTextRendering = true
-        Me.btnm2_23.UseVisualStyleBackColor = false
+        Me.btnm2_23.UseCompatibleTextRendering = True
+        Me.btnm2_23.UseVisualStyleBackColor = False
         '
         'btnm2_11
         '
-        Me.btnm2_11.AllowDrop = true
-        Me.btnm2_11.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_11.AllowDrop = True
+        Me.btnm2_11.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_11.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_11.FlatAppearance.BorderSize = 2
         Me.btnm2_11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_11.ForeColor = System.Drawing.Color.White
         Me.btnm2_11.Location = New System.Drawing.Point(407, 81)
         Me.btnm2_11.Name = "btnm2_11"
         Me.btnm2_11.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_11.TabIndex = 0
-        Me.btnm2_11.TabStop = false
+        Me.btnm2_11.TabStop = False
         Me.btnm2_11.Tag = "noitem"
-        Me.btnm2_11.UseCompatibleTextRendering = true
-        Me.btnm2_11.UseVisualStyleBackColor = false
+        Me.btnm2_11.UseCompatibleTextRendering = True
+        Me.btnm2_11.UseVisualStyleBackColor = False
         '
         'btnm2_17
         '
-        Me.btnm2_17.AllowDrop = true
-        Me.btnm2_17.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_17.AllowDrop = True
+        Me.btnm2_17.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_17.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_17.FlatAppearance.BorderSize = 2
         Me.btnm2_17.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_17.ForeColor = System.Drawing.Color.White
         Me.btnm2_17.Location = New System.Drawing.Point(407, 134)
         Me.btnm2_17.Name = "btnm2_17"
         Me.btnm2_17.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_17.TabIndex = 0
-        Me.btnm2_17.TabStop = false
+        Me.btnm2_17.TabStop = False
         Me.btnm2_17.Tag = "noitem"
-        Me.btnm2_17.UseCompatibleTextRendering = true
-        Me.btnm2_17.UseVisualStyleBackColor = false
+        Me.btnm2_17.UseCompatibleTextRendering = True
+        Me.btnm2_17.UseVisualStyleBackColor = False
         '
         'btnm2_5
         '
-        Me.btnm2_5.AllowDrop = true
-        Me.btnm2_5.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_5.AllowDrop = True
+        Me.btnm2_5.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_5.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_5.FlatAppearance.BorderSize = 2
         Me.btnm2_5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_5.ForeColor = System.Drawing.Color.White
         Me.btnm2_5.Location = New System.Drawing.Point(407, 28)
         Me.btnm2_5.Name = "btnm2_5"
         Me.btnm2_5.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_5.TabIndex = 0
-        Me.btnm2_5.TabStop = false
+        Me.btnm2_5.TabStop = False
         Me.btnm2_5.Tag = "noitem"
-        Me.btnm2_5.UseCompatibleTextRendering = true
-        Me.btnm2_5.UseVisualStyleBackColor = false
+        Me.btnm2_5.UseCompatibleTextRendering = True
+        Me.btnm2_5.UseVisualStyleBackColor = False
         '
         'btnm2_27
         '
-        Me.btnm2_27.AllowDrop = true
-        Me.btnm2_27.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_27.AllowDrop = True
+        Me.btnm2_27.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_27.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_27.FlatAppearance.BorderSize = 2
         Me.btnm2_27.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_27.ForeColor = System.Drawing.Color.White
         Me.btnm2_27.Location = New System.Drawing.Point(209, 240)
         Me.btnm2_27.Name = "btnm2_27"
         Me.btnm2_27.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_27.TabIndex = 0
-        Me.btnm2_27.TabStop = false
+        Me.btnm2_27.TabStop = False
         Me.btnm2_27.Tag = "noitem"
-        Me.btnm2_27.UseCompatibleTextRendering = true
-        Me.btnm2_27.UseVisualStyleBackColor = false
+        Me.btnm2_27.UseCompatibleTextRendering = True
+        Me.btnm2_27.UseVisualStyleBackColor = False
         '
         'btnm2_21
         '
-        Me.btnm2_21.AllowDrop = true
-        Me.btnm2_21.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_21.AllowDrop = True
+        Me.btnm2_21.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_21.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_21.FlatAppearance.BorderSize = 2
         Me.btnm2_21.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_21.ForeColor = System.Drawing.Color.White
         Me.btnm2_21.Location = New System.Drawing.Point(209, 187)
         Me.btnm2_21.Name = "btnm2_21"
         Me.btnm2_21.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_21.TabIndex = 0
-        Me.btnm2_21.TabStop = false
+        Me.btnm2_21.TabStop = False
         Me.btnm2_21.Tag = "noitem"
-        Me.btnm2_21.UseCompatibleTextRendering = true
-        Me.btnm2_21.UseVisualStyleBackColor = false
+        Me.btnm2_21.UseCompatibleTextRendering = True
+        Me.btnm2_21.UseVisualStyleBackColor = False
         '
         'btnm2_9
         '
-        Me.btnm2_9.AllowDrop = true
-        Me.btnm2_9.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_9.AllowDrop = True
+        Me.btnm2_9.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_9.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_9.FlatAppearance.BorderSize = 2
         Me.btnm2_9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_9.ForeColor = System.Drawing.Color.White
         Me.btnm2_9.Location = New System.Drawing.Point(209, 81)
         Me.btnm2_9.Name = "btnm2_9"
         Me.btnm2_9.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_9.TabIndex = 0
-        Me.btnm2_9.TabStop = false
+        Me.btnm2_9.TabStop = False
         Me.btnm2_9.Tag = "noitem"
-        Me.btnm2_9.UseCompatibleTextRendering = true
-        Me.btnm2_9.UseVisualStyleBackColor = false
+        Me.btnm2_9.UseCompatibleTextRendering = True
+        Me.btnm2_9.UseVisualStyleBackColor = False
         '
         'btnm2_15
         '
-        Me.btnm2_15.AllowDrop = true
-        Me.btnm2_15.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_15.AllowDrop = True
+        Me.btnm2_15.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_15.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_15.FlatAppearance.BorderSize = 2
         Me.btnm2_15.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_15.ForeColor = System.Drawing.Color.White
         Me.btnm2_15.Location = New System.Drawing.Point(209, 134)
         Me.btnm2_15.Name = "btnm2_15"
         Me.btnm2_15.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_15.TabIndex = 0
-        Me.btnm2_15.TabStop = false
+        Me.btnm2_15.TabStop = False
         Me.btnm2_15.Tag = "noitem"
-        Me.btnm2_15.UseCompatibleTextRendering = true
-        Me.btnm2_15.UseVisualStyleBackColor = false
+        Me.btnm2_15.UseCompatibleTextRendering = True
+        Me.btnm2_15.UseVisualStyleBackColor = False
         '
         'btnm2_3
         '
-        Me.btnm2_3.AllowDrop = true
-        Me.btnm2_3.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_3.AllowDrop = True
+        Me.btnm2_3.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_3.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_3.FlatAppearance.BorderSize = 2
         Me.btnm2_3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_3.ForeColor = System.Drawing.Color.White
         Me.btnm2_3.Location = New System.Drawing.Point(209, 28)
         Me.btnm2_3.Name = "btnm2_3"
         Me.btnm2_3.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_3.TabIndex = 0
-        Me.btnm2_3.TabStop = false
+        Me.btnm2_3.TabStop = False
         Me.btnm2_3.Tag = "noitem"
-        Me.btnm2_3.UseCompatibleTextRendering = true
-        Me.btnm2_3.UseVisualStyleBackColor = false
+        Me.btnm2_3.UseCompatibleTextRendering = True
+        Me.btnm2_3.UseVisualStyleBackColor = False
         '
         'btnm2_25
         '
-        Me.btnm2_25.AllowDrop = true
-        Me.btnm2_25.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_25.AllowDrop = True
+        Me.btnm2_25.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_25.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_25.FlatAppearance.BorderSize = 2
         Me.btnm2_25.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_25.ForeColor = System.Drawing.Color.White
         Me.btnm2_25.Location = New System.Drawing.Point(11, 240)
         Me.btnm2_25.Name = "btnm2_25"
         Me.btnm2_25.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_25.TabIndex = 0
-        Me.btnm2_25.TabStop = false
+        Me.btnm2_25.TabStop = False
         Me.btnm2_25.Tag = "noitem"
-        Me.btnm2_25.UseCompatibleTextRendering = true
-        Me.btnm2_25.UseVisualStyleBackColor = false
+        Me.btnm2_25.UseCompatibleTextRendering = True
+        Me.btnm2_25.UseVisualStyleBackColor = False
         '
         'btnm2_19
         '
-        Me.btnm2_19.AllowDrop = true
-        Me.btnm2_19.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_19.AllowDrop = True
+        Me.btnm2_19.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_19.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_19.FlatAppearance.BorderSize = 2
         Me.btnm2_19.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_19.ForeColor = System.Drawing.Color.White
         Me.btnm2_19.Location = New System.Drawing.Point(11, 187)
         Me.btnm2_19.Name = "btnm2_19"
         Me.btnm2_19.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_19.TabIndex = 0
-        Me.btnm2_19.TabStop = false
+        Me.btnm2_19.TabStop = False
         Me.btnm2_19.Tag = "noitem"
-        Me.btnm2_19.UseCompatibleTextRendering = true
-        Me.btnm2_19.UseVisualStyleBackColor = false
+        Me.btnm2_19.UseCompatibleTextRendering = True
+        Me.btnm2_19.UseVisualStyleBackColor = False
         '
         'btnm2_7
         '
-        Me.btnm2_7.AllowDrop = true
-        Me.btnm2_7.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_7.AllowDrop = True
+        Me.btnm2_7.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_7.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_7.FlatAppearance.BorderSize = 2
         Me.btnm2_7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_7.ForeColor = System.Drawing.Color.White
         Me.btnm2_7.Location = New System.Drawing.Point(11, 81)
         Me.btnm2_7.Name = "btnm2_7"
         Me.btnm2_7.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_7.TabIndex = 0
-        Me.btnm2_7.TabStop = false
+        Me.btnm2_7.TabStop = False
         Me.btnm2_7.Tag = "noitem"
-        Me.btnm2_7.UseCompatibleTextRendering = true
-        Me.btnm2_7.UseVisualStyleBackColor = false
+        Me.btnm2_7.UseCompatibleTextRendering = True
+        Me.btnm2_7.UseVisualStyleBackColor = False
         '
         'btnm2_13
         '
-        Me.btnm2_13.AllowDrop = true
-        Me.btnm2_13.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_13.AllowDrop = True
+        Me.btnm2_13.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_13.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_13.FlatAppearance.BorderSize = 2
         Me.btnm2_13.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_13.ForeColor = System.Drawing.Color.White
         Me.btnm2_13.Location = New System.Drawing.Point(11, 134)
         Me.btnm2_13.Name = "btnm2_13"
         Me.btnm2_13.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_13.TabIndex = 0
-        Me.btnm2_13.TabStop = false
+        Me.btnm2_13.TabStop = False
         Me.btnm2_13.Tag = "noitem"
-        Me.btnm2_13.UseCompatibleTextRendering = true
-        Me.btnm2_13.UseVisualStyleBackColor = false
+        Me.btnm2_13.UseCompatibleTextRendering = True
+        Me.btnm2_13.UseVisualStyleBackColor = False
         '
         'btnm2_1
         '
-        Me.btnm2_1.AllowDrop = true
-        Me.btnm2_1.BackColor = System.Drawing.Color.FromArgb(CType(CType(53,Byte),Integer), CType(CType(87,Byte),Integer), CType(CType(117,Byte),Integer))
+        Me.btnm2_1.AllowDrop = True
+        Me.btnm2_1.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.btnm2_1.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnm2_1.FlatAppearance.BorderSize = 2
         Me.btnm2_1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Yellow
         Me.btnm2_1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
-        Me.btnm2_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36,Byte),Integer), CType(CType(62,Byte),Integer), CType(CType(81,Byte),Integer))
+        Me.btnm2_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.btnm2_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnm2_1.ForeColor = System.Drawing.Color.White
         Me.btnm2_1.Location = New System.Drawing.Point(11, 28)
         Me.btnm2_1.Name = "btnm2_1"
         Me.btnm2_1.Size = New System.Drawing.Size(88, 45)
         Me.btnm2_1.TabIndex = 0
-        Me.btnm2_1.TabStop = false
+        Me.btnm2_1.TabStop = False
         Me.btnm2_1.Tag = "noitem"
-        Me.btnm2_1.UseCompatibleTextRendering = true
-        Me.btnm2_1.UseVisualStyleBackColor = false
+        Me.btnm2_1.UseCompatibleTextRendering = True
+        Me.btnm2_1.UseVisualStyleBackColor = False
         '
         'lbl_fecha
         '
-        Me.lbl_fecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lbl_fecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_fecha.ForeColor = System.Drawing.Color.White
         Me.lbl_fecha.Location = New System.Drawing.Point(868, 32)
         Me.lbl_fecha.Name = "lbl_fecha"
@@ -2152,12 +2114,12 @@ Partial Class Form1
         Me.lbl_fecha.TabIndex = 10
         Me.lbl_fecha.Text = "miercoles 20 de diciembre de 2016"
         Me.lbl_fecha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lbl_fecha.UseCompatibleTextRendering = true
+        Me.lbl_fecha.UseCompatibleTextRendering = True
         '
         'lbl_hora
         '
-        Me.lbl_hora.AutoEllipsis = true
-        Me.lbl_hora.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lbl_hora.AutoEllipsis = True
+        Me.lbl_hora.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_hora.ForeColor = System.Drawing.Color.White
         Me.lbl_hora.Location = New System.Drawing.Point(868, 1)
         Me.lbl_hora.Name = "lbl_hora"
@@ -2165,11 +2127,11 @@ Partial Class Form1
         Me.lbl_hora.TabIndex = 11
         Me.lbl_hora.Text = "00:00:00"
         Me.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lbl_hora.UseCompatibleTextRendering = true
+        Me.lbl_hora.UseCompatibleTextRendering = True
         '
         'tiempoyhora
         '
-        Me.tiempoyhora.Enabled = true
+        Me.tiempoyhora.Enabled = True
         '
         'menu2
         '
@@ -2179,7 +2141,7 @@ Partial Class Form1
         '
         'ToolStripMenuItem1
         '
-        Me.ToolStripMenuItem1.Enabled = false
+        Me.ToolStripMenuItem1.Enabled = False
         Me.ToolStripMenuItem1.Image = Global.controldeaire.My.Resources.Resources.clear
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(167, 22)
@@ -2199,7 +2161,7 @@ Partial Class Form1
         '
         'ToolStripMenuItem3
         '
-        Me.ToolStripMenuItem3.Enabled = false
+        Me.ToolStripMenuItem3.Enabled = False
         Me.ToolStripMenuItem3.Image = Global.controldeaire.My.Resources.Resources.save16
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
         Me.ToolStripMenuItem3.Size = New System.Drawing.Size(167, 22)
@@ -2214,10 +2176,10 @@ Partial Class Form1
         Me.btn_menu2.Name = "btn_menu2"
         Me.btn_menu2.Size = New System.Drawing.Size(66, 22)
         Me.btn_menu2.TabIndex = 14
-        Me.btn_menu2.TabStop = false
+        Me.btn_menu2.TabStop = False
         Me.btn_menu2.Text = "MENU"
-        Me.btn_menu2.UseCompatibleTextRendering = true
-        Me.btn_menu2.UseVisualStyleBackColor = true
+        Me.btn_menu2.UseCompatibleTextRendering = True
+        Me.btn_menu2.UseVisualStyleBackColor = True
         '
         'btn_menu1
         '
@@ -2228,10 +2190,10 @@ Partial Class Form1
         Me.btn_menu1.Name = "btn_menu1"
         Me.btn_menu1.Size = New System.Drawing.Size(65, 22)
         Me.btn_menu1.TabIndex = 15
-        Me.btn_menu1.TabStop = false
+        Me.btn_menu1.TabStop = False
         Me.btn_menu1.Text = "MENU"
-        Me.btn_menu1.UseCompatibleTextRendering = true
-        Me.btn_menu1.UseVisualStyleBackColor = true
+        Me.btn_menu1.UseCompatibleTextRendering = True
+        Me.btn_menu1.UseVisualStyleBackColor = True
         '
         'TrackBar2
         '
@@ -2241,11 +2203,11 @@ Partial Class Form1
         Me.TrackBar2.Orientation = System.Windows.Forms.Orientation.Vertical
         Me.TrackBar2.Size = New System.Drawing.Size(45, 203)
         Me.TrackBar2.TabIndex = 27
-        Me.TrackBar2.TabStop = false
+        Me.TrackBar2.TabStop = False
         Me.TrackBar2.TickFrequency = 10
         Me.TrackBar2.TickStyle = System.Windows.Forms.TickStyle.Both
         Me.TrackBar2.Value = 100
-        Me.TrackBar2.Visible = false
+        Me.TrackBar2.Visible = False
         '
         'Timer1
         '
@@ -2281,12 +2243,12 @@ Partial Class Form1
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(78, 85)
         Me.GroupBox7.TabIndex = 31
-        Me.GroupBox7.TabStop = false
+        Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "FADE"
         '
         'Button1
         '
-        Me.Button1.AutoEllipsis = true
+        Me.Button1.AutoEllipsis = True
         Me.Button1.BackgroundImage = Global.controldeaire.My.Resources.Resources.soundfade
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
@@ -2295,47 +2257,47 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(58, 27)
         Me.Button1.TabIndex = 40
-        Me.Button1.TabStop = false
-        Me.Button1.UseVisualStyleBackColor = true
+        Me.Button1.TabStop = False
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Button11
         '
         Me.Button11.BackColor = System.Drawing.Color.LightGray
         Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13,Byte),Integer), CType(CType(44,Byte),Integer), CType(CType(72,Byte),Integer))
+        Me.Button11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Button11.FlatAppearance.BorderSize = 0
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button11.Font = New System.Drawing.Font("Webdings", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Button11.Font = New System.Drawing.Font("Webdings", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.Location = New System.Drawing.Point(50, 32)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(17, 15)
         Me.Button11.TabIndex = 39
-        Me.Button11.TabStop = false
+        Me.Button11.TabStop = False
         Me.Button11.Text = "6"
-        Me.Button11.UseCompatibleTextRendering = true
-        Me.Button11.UseVisualStyleBackColor = false
+        Me.Button11.UseCompatibleTextRendering = True
+        Me.Button11.UseVisualStyleBackColor = False
         '
         'Button10
         '
         Me.Button10.BackColor = System.Drawing.Color.LightGray
         Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13,Byte),Integer), CType(CType(44,Byte),Integer), CType(CType(72,Byte),Integer))
+        Me.Button10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Button10.FlatAppearance.BorderSize = 0
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button10.Font = New System.Drawing.Font("Webdings", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Button10.Font = New System.Drawing.Font("Webdings", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.Location = New System.Drawing.Point(50, 18)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(17, 15)
         Me.Button10.TabIndex = 38
-        Me.Button10.TabStop = false
+        Me.Button10.TabStop = False
         Me.Button10.Text = "5"
-        Me.Button10.UseCompatibleTextRendering = true
-        Me.Button10.UseVisualStyleBackColor = false
+        Me.Button10.UseCompatibleTextRendering = True
+        Me.Button10.UseVisualStyleBackColor = False
         '
         'Label10
         '
         Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Lime
         Me.Label10.Location = New System.Drawing.Point(10, 20)
         Me.Label10.Name = "Label10"
@@ -2343,7 +2305,7 @@ Partial Class Form1
         Me.Label10.TabIndex = 37
         Me.Label10.Text = "10"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label10.UseCompatibleTextRendering = true
+        Me.Label10.UseCompatibleTextRendering = True
         '
         'GroupBox6
         '
@@ -2355,12 +2317,12 @@ Partial Class Form1
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(78, 179)
         Me.GroupBox6.TabIndex = 32
-        Me.GroupBox6.TabStop = false
+        Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Tanda"
         '
         'Button16
         '
-        Me.Button16.AutoEllipsis = true
+        Me.Button16.AutoEllipsis = True
         Me.Button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button16.ForeColor = System.Drawing.Color.Black
         Me.Button16.Image = Global.controldeaire.My.Resources.Resources.nuevo
@@ -2369,16 +2331,16 @@ Partial Class Form1
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(65, 49)
         Me.Button16.TabIndex = 46
-        Me.Button16.TabStop = false
+        Me.Button16.TabStop = False
         Me.Button16.Text = "Crear"
         Me.Button16.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button16.UseVisualStyleBackColor = true
+        Me.Button16.UseVisualStyleBackColor = True
         '
         'Button15
         '
-        Me.Button15.AutoEllipsis = true
+        Me.Button15.AutoEllipsis = True
         Me.Button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button15.Enabled = false
+        Me.Button15.Enabled = False
         Me.Button15.ForeColor = System.Drawing.Color.Black
         Me.Button15.Image = Global.controldeaire.My.Resources.Resources.clear24
         Me.Button15.ImageAlign = System.Drawing.ContentAlignment.TopCenter
@@ -2386,14 +2348,14 @@ Partial Class Form1
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(65, 49)
         Me.Button15.TabIndex = 46
-        Me.Button15.TabStop = false
+        Me.Button15.TabStop = False
         Me.Button15.Text = "Limpiar"
         Me.Button15.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button15.UseVisualStyleBackColor = true
+        Me.Button15.UseVisualStyleBackColor = True
         '
         'Button13
         '
-        Me.Button13.AutoEllipsis = true
+        Me.Button13.AutoEllipsis = True
         Me.Button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button13.ForeColor = System.Drawing.Color.Black
         Me.Button13.Image = Global.controldeaire.My.Resources.Resources.openfile1
@@ -2402,10 +2364,10 @@ Partial Class Form1
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(65, 49)
         Me.Button13.TabIndex = 45
-        Me.Button13.TabStop = false
+        Me.Button13.TabStop = False
         Me.Button13.Text = "Abrir"
         Me.Button13.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button13.UseVisualStyleBackColor = true
+        Me.Button13.UseVisualStyleBackColor = True
         '
         'GroupBox8
         '
@@ -2416,11 +2378,11 @@ Partial Class Form1
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(78, 125)
         Me.GroupBox8.TabIndex = 33
-        Me.GroupBox8.TabStop = false
+        Me.GroupBox8.TabStop = False
         '
         'Button12
         '
-        Me.Button12.AutoEllipsis = true
+        Me.Button12.AutoEllipsis = True
         Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button12.ForeColor = System.Drawing.Color.Black
         Me.Button12.Image = Global.controldeaire.My.Resources.Resources.user
@@ -2429,15 +2391,15 @@ Partial Class Form1
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(66, 49)
         Me.Button12.TabIndex = 46
-        Me.Button12.TabStop = false
+        Me.Button12.TabStop = False
         Me.Button12.Text = "Comunicar"
         Me.Button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button12.UseVisualStyleBackColor = true
-        Me.Button12.Visible = false
+        Me.Button12.UseVisualStyleBackColor = True
+        Me.Button12.Visible = False
         '
         'Button17
         '
-        Me.Button17.AutoEllipsis = true
+        Me.Button17.AutoEllipsis = True
         Me.Button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button17.ForeColor = System.Drawing.Color.Black
         Me.Button17.Image = Global.controldeaire.My.Resources.Resources.Searchicon
@@ -2446,11 +2408,11 @@ Partial Class Form1
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(66, 49)
         Me.Button17.TabIndex = 46
-        Me.Button17.TabStop = false
+        Me.Button17.TabStop = False
         Me.Button17.Text = "Buscar"
         Me.Button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button17.UseVisualStyleBackColor = true
-        Me.Button17.Visible = false
+        Me.Button17.UseVisualStyleBackColor = True
+        Me.Button17.Visible = False
         '
         'Timer2
         '
@@ -2459,7 +2421,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Lime
         Me.Label5.Location = New System.Drawing.Point(656, 19)
         Me.Label5.Name = "Label5"
@@ -2467,28 +2429,28 @@ Partial Class Form1
         Me.Label5.TabIndex = 50
         Me.Label5.Text = "1"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label5.UseCompatibleTextRendering = true
-        Me.Label5.Visible = false
+        Me.Label5.UseCompatibleTextRendering = True
+        Me.Label5.Visible = False
         '
         'AxWindowsMediaPlayer1
         '
-        Me.AxWindowsMediaPlayer1.Enabled = true
-        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(463, 377)
+        Me.AxWindowsMediaPlayer1.Enabled = True
+        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(463, 367)
         Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
-        Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"),System.Windows.Forms.AxHost.State)
-        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(75, 23)
+        Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(75, 33)
         Me.AxWindowsMediaPlayer1.TabIndex = 28
-        Me.AxWindowsMediaPlayer1.Visible = false
+        Me.AxWindowsMediaPlayer1.Visible = False
         '
         'AxWindowsMediaPlayer2
         '
-        Me.AxWindowsMediaPlayer2.Enabled = true
-        Me.AxWindowsMediaPlayer2.Location = New System.Drawing.Point(463, 418)
+        Me.AxWindowsMediaPlayer2.Enabled = True
+        Me.AxWindowsMediaPlayer2.Location = New System.Drawing.Point(463, 406)
         Me.AxWindowsMediaPlayer2.Name = "AxWindowsMediaPlayer2"
-        Me.AxWindowsMediaPlayer2.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer2.OcxState"),System.Windows.Forms.AxHost.State)
-        Me.AxWindowsMediaPlayer2.Size = New System.Drawing.Size(75, 23)
+        Me.AxWindowsMediaPlayer2.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer2.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxWindowsMediaPlayer2.Size = New System.Drawing.Size(75, 35)
         Me.AxWindowsMediaPlayer2.TabIndex = 34
-        Me.AxWindowsMediaPlayer2.Visible = false
+        Me.AxWindowsMediaPlayer2.Visible = False
         '
         'PictureBox1
         '
@@ -2499,18 +2461,65 @@ Partial Class Form1
         Me.PictureBox1.Size = New System.Drawing.Size(222, 53)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = false
+        Me.PictureBox1.TabStop = False
         '
         'Timer3
         '
         Me.Timer3.Interval = 500
         '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(697, 13)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.TabIndex = 51
+        '
+        'MoveItemListView1
+        '
+        Me.MoveItemListView1.AllowDrop = True
+        Me.MoveItemListView1.AutoArrange = False
+        Me.MoveItemListView1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.MoveItemListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
+        Me.MoveItemListView1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.MoveItemListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MoveItemListView1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(1, Byte), Integer))
+        Me.MoveItemListView1.FullRowSelect = True
+        Me.MoveItemListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
+        Me.MoveItemListView1.HideSelection = False
+        Me.MoveItemListView1.InsertionLineColor = System.Drawing.Color.White
+        Me.MoveItemListView1.Location = New System.Drawing.Point(3, 7)
+        Me.MoveItemListView1.Name = "MoveItemListView1"
+        Me.MoveItemListView1.Size = New System.Drawing.Size(453, 220)
+        Me.MoveItemListView1.TabIndex = 52
+        Me.MoveItemListView1.UseCompatibleStateImageBehavior = False
+        Me.MoveItemListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "Pista"
+        Me.ColumnHeader5.Width = 353
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "Tiempo"
+        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.ColumnHeader6.Width = 83
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Width = 0
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Width = 0
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13,Byte),Integer), CType(CType(44,Byte),Integer), CType(CType(72,Byte),Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1162, 676)
+        Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.GroupBox8)
         Me.Controls.Add(Me.AxWindowsMediaPlayer1)
         Me.Controls.Add(Me.btn_menu1)
@@ -2529,7 +2538,7 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.TrackBar2)
-        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "El Puente FM 103.3 - Control de Aire"
@@ -2716,4 +2725,5 @@ End Sub
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Timer3 As System.Windows.Forms.Timer
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
 End Class

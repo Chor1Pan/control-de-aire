@@ -288,4 +288,11 @@ Public Class Reproductor
         Dim sec3 As Long = sec1 - sec2
         Return Format(sec3, "0")
     End Function
+
+    Public Function niveles() As Integer
+        Dim sBuffer As New StringBuilder(MAX_PATH)
+        'mciSendString("Status " & strAlias & " level", strReturn, 255, 0)
+        Dim mciResul As Integer = mciSendString("Status " & _Alias & " level", sBuffer, 255, 0)
+        Return mciResul
+    End Function
 End Class

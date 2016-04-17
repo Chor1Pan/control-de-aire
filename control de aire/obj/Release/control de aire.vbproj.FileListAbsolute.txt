@@ -14,7 +14,6 @@ E:\control de aire\control de aire\bin\Release\System.Management.dll
 E:\control de aire\control de aire\bin\Release\System.Windows.Forms.dll
 E:\control de aire\control de aire\bin\Release\System.Xml.dll
 E:\control de aire\control de aire\bin\Release\System.Xml.Linq.dll
-E:\control de aire\control de aire\bin\Release\WinMM.Net.dll
 E:\control de aire\control de aire\bin\Release\WinMM.Net.pdb
 E:\control de aire\control de aire\bin\Release\Interop.WMPLib.dll
 E:\control de aire\control de aire\bin\Release\AxInterop.WMPLib.dll
