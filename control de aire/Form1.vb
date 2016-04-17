@@ -459,6 +459,7 @@ Public Class Form1
     End Sub
     Private Sub IniciarReproduccion3(ByVal archivoaudio As String, ByVal nombrearchivo As String)
         If archivoaudio <> "" Then
+            AxWindowsMediaPlayer2.settings.volume = 100
             AxWindowsMediaPlayer2.URL = archivoaudio
             AxWindowsMediaPlayer2.Ctlcontrols.play()
             contvolumen = 2
@@ -469,6 +470,7 @@ Public Class Form1
     Public Sub DetenerReproduccion3()
         AxWindowsMediaPlayer2.Ctlcontrols.stop()
         TrackBar2.Value = 100
+        AxWindowsMediaPlayer2.settings.volume = 0
     End Sub
 
     Private Sub MoveItemListView1_DoubleClick(sender As Object, e As EventArgs) Handles MoveItemListView1.DoubleClick
@@ -498,28 +500,30 @@ Public Class Form1
     End Sub
 
     Private Sub btnm1_1_Click(sender As Object, e As EventArgs) Handles btnm1_1.Click, btnm1_2.Click, btnm1_3.Click, btnm1_4.Click, btnm1_5.Click, btnm1_6.Click, btnm1_7.Click, btnm1_8.Click, btnm1_9.Click, btnm1_10.Click, btnm1_11.Click, btnm1_12.Click, btnm1_13.Click, btnm1_14.Click, btnm1_15.Click, btnm1_16.Click, btnm1_17.Click, btnm1_18.Click, btnm1_19.Click, btnm1_20.Click, btnm1_21.Click, btnm1_22.Click, btnm1_23.Click, btnm1_24.Click, btnm1_25.Click, btnm1_26.Click, btnm1_27.Click, btnm1_28.Click, btnm1_29.Click, btnm1_30.Click
+        If ToolStripMenuItem4.Checked = True Then
+            IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
+        Else
             If Not CType(sender, Button).Tag = "noitem" Then
-            colorbotonera()
-            If ToolStripMenuItem4.Checked = True Then
-                IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
-            Else
+                colorbotonera()
+
                 IniciarReproduccion(CType(sender, Button).Tag, CType(sender, Button).Text)
                 launchpad = True
+                CType(sender, Button).BackColor = Color.Maroon
             End If
-            CType(sender, Button).BackColor = Color.Maroon
         End If
     End Sub
 
     Private Sub btnm2_1_Click(sender As Object, e As EventArgs) Handles btnm2_1.Click, btnm2_2.Click, btnm2_3.Click, btnm2_4.Click, btnm2_5.Click, btnm2_6.Click, btnm2_7.Click, btnm2_8.Click, btnm2_9.Click, btnm2_10.Click, btnm2_11.Click, btnm2_12.Click, btnm2_13.Click, btnm2_14.Click, btnm2_15.Click, btnm2_16.Click, btnm2_17.Click, btnm2_18.Click, btnm2_19.Click, btnm2_20.Click, btnm2_21.Click, btnm2_22.Click, btnm2_23.Click, btnm2_24.Click, btnm2_25.Click, btnm2_26.Click, btnm2_27.Click, btnm2_28.Click, btnm2_29.Click, btnm2_30.Click
-        If Not CType(sender, Button).Tag = "noitem" Then
-            colorbotonera()
-            If ToolStripMenuItem5.Checked = True Then
-                IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
-            Else
+        If ToolStripMenuItem5.Checked = True Then
+            IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
+        Else
+            If Not CType(sender, Button).Tag = "noitem" Then
+                colorbotonera()
+
                 IniciarReproduccion(CType(sender, Button).Tag, CType(sender, Button).Text)
                 launchpad = True
+                CType(sender, Button).BackColor = Color.Maroon
             End If
-            CType(sender, Button).BackColor = Color.Maroon
         End If
     End Sub
 
