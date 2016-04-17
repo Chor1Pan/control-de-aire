@@ -1,0 +1,38 @@
+E:\control de aire\control de aire\bin\Release\Resources\startup.mp3
+E:\control de aire\control de aire\bin\Release\Control de Aire.exe.manifest
+E:\control de aire\control de aire\bin\Release\Control de Aire.application
+E:\control de aire\control de aire\bin\Release\Control de Aire.exe
+E:\control de aire\control de aire\bin\Release\Control de Aire.pdb
+E:\control de aire\control de aire\bin\Release\Control de Aire.xml
+E:\control de aire\control de aire\bin\Release\ExpTreeLib.dll
+E:\control de aire\control de aire\bin\Release\System.Data.DataSetExtensions.dll
+E:\control de aire\control de aire\bin\Release\System.Data.dll
+E:\control de aire\control de aire\bin\Release\System.Deployment.dll
+E:\control de aire\control de aire\bin\Release\System.dll
+E:\control de aire\control de aire\bin\Release\System.Drawing.dll
+E:\control de aire\control de aire\bin\Release\System.Management.dll
+E:\control de aire\control de aire\bin\Release\System.Windows.Forms.dll
+E:\control de aire\control de aire\bin\Release\System.Xml.dll
+E:\control de aire\control de aire\bin\Release\System.Xml.Linq.dll
+E:\control de aire\control de aire\bin\Release\WinMM.Net.dll
+E:\control de aire\control de aire\bin\Release\WinMM.Net.pdb
+E:\control de aire\control de aire\bin\Release\Interop.WMPLib.dll
+E:\control de aire\control de aire\bin\Release\AxInterop.WMPLib.dll
+E:\control de aire\control de aire\obj\Release\Interop.WMPLib.dll
+E:\control de aire\control de aire\obj\Release\AxInterop.WMPLib.dll
+E:\control de aire\control de aire\obj\Release\control de aire.vbproj.ResolveComReference.cache
+E:\control de aire\control de aire\obj\Release\Control de Aire.g.resources
+E:\control de aire\control de aire\obj\Release\controldeaire.Form1.resources
+E:\control de aire\control de aire\obj\Release\controldeaire.Form2.resources
+E:\control de aire\control de aire\obj\Release\controldeaire.Form3.resources
+E:\control de aire\control de aire\obj\Release\controldeaire.Form4.resources
+E:\control de aire\control de aire\obj\Release\controldeaire.Form5.resources
+E:\control de aire\control de aire\obj\Release\controldeaire.Resources.resources
+E:\control de aire\control de aire\obj\Release\control de aire.vbproj.GenerateResource.Cache
+E:\control de aire\control de aire\obj\Release\Control de Aire.TrustInfo.xml
+E:\control de aire\control de aire\obj\Release\Control de Aire.exe.manifest
+E:\control de aire\control de aire\obj\Release\Control de Aire.application
+E:\control de aire\control de aire\obj\Release\Control de Aire.exe
+E:\control de aire\control de aire\obj\Release\Control de Aire.xml
+E:\control de aire\control de aire\obj\Release\Control de Aire.pdb
+E:\control de aire\control de aire\obj\Release\control de aire.vbprojResolveAssemblyReference.cache

@@ -1,0 +1,37 @@
+E:\control de aire\control de aire\bin\Debug\Resources\startup.mp3
+E:\control de aire\control de aire\bin\Debug\Control de Aire.exe.manifest
+E:\control de aire\control de aire\bin\Debug\Control de Aire.application
+E:\control de aire\control de aire\bin\Debug\Control de Aire.exe
+E:\control de aire\control de aire\bin\Debug\Control de Aire.pdb
+E:\control de aire\control de aire\bin\Debug\Control de Aire.xml
+E:\control de aire\control de aire\bin\Debug\System.Data.DataSetExtensions.dll
+E:\control de aire\control de aire\bin\Debug\System.Data.dll
+E:\control de aire\control de aire\bin\Debug\System.Deployment.dll
+E:\control de aire\control de aire\bin\Debug\System.dll
+E:\control de aire\control de aire\bin\Debug\System.Drawing.dll
+E:\control de aire\control de aire\bin\Debug\System.Management.dll
+E:\control de aire\control de aire\bin\Debug\System.Windows.Forms.dll
+E:\control de aire\control de aire\bin\Debug\System.Xml.dll
+E:\control de aire\control de aire\bin\Debug\System.Xml.Linq.dll
+E:\control de aire\control de aire\bin\Debug\WinMM.Net.dll
+E:\control de aire\control de aire\bin\Debug\WinMM.Net.pdb
+E:\control de aire\control de aire\bin\Debug\Interop.WMPLib.dll
+E:\control de aire\control de aire\bin\Debug\AxInterop.WMPLib.dll
+E:\control de aire\control de aire\obj\Debug\Interop.WMPLib.dll
+E:\control de aire\control de aire\obj\Debug\AxInterop.WMPLib.dll
+E:\control de aire\control de aire\obj\Debug\control de aire.vbproj.ResolveComReference.cache
+E:\control de aire\control de aire\obj\Debug\Control de Aire.g.resources
+E:\control de aire\control de aire\obj\Debug\controldeaire.Form1.resources
+E:\control de aire\control de aire\obj\Debug\controldeaire.Form2.resources
+E:\control de aire\control de aire\obj\Debug\controldeaire.Form3.resources
+E:\control de aire\control de aire\obj\Debug\controldeaire.Form4.resources
+E:\control de aire\control de aire\obj\Debug\controldeaire.Form5.resources
+E:\control de aire\control de aire\obj\Debug\controldeaire.Resources.resources
+E:\control de aire\control de aire\obj\Debug\control de aire.vbproj.GenerateResource.Cache
+E:\control de aire\control de aire\obj\Debug\Control de Aire.TrustInfo.xml
+E:\control de aire\control de aire\obj\Debug\Control de Aire.exe.manifest
+E:\control de aire\control de aire\obj\Debug\Control de Aire.application
+E:\control de aire\control de aire\obj\Debug\Control de Aire.exe
+E:\control de aire\control de aire\obj\Debug\Control de Aire.xml
+E:\control de aire\control de aire\obj\Debug\Control de Aire.pdb
+E:\control de aire\control de aire\obj\Debug\control de aire.vbprojResolveAssemblyReference.cache
