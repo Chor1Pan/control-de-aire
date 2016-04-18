@@ -263,8 +263,6 @@ Public Class Form1
     End Sub
     Private Sub lv1_ItemDrag(sender As Object, e As ItemDragEventArgs) Handles lv1.ItemDrag
         lv1.DoDragDrop(lv1.SelectedItems(0).SubItems(4).Text, DragDropEffects.Copy)
-        'End If
-        'MouseIsDown = False
     End Sub
     Private Sub Button1_DragDrop(sender As Object, e As DragEventArgs) Handles btnm1_1.DragDrop, btnm1_2.DragDrop, btnm1_3.DragDrop, btnm1_4.DragDrop, btnm1_5.DragDrop, btnm1_6.DragDrop, btnm1_7.DragDrop, btnm1_8.DragDrop, btnm1_9.DragDrop, btnm1_10.DragDrop, btnm1_11.DragDrop, btnm1_12.DragDrop, btnm1_13.DragDrop, btnm1_14.DragDrop, btnm1_15.DragDrop, btnm1_16.DragDrop, btnm1_17.DragDrop, btnm1_18.DragDrop, btnm1_19.DragDrop, btnm1_20.DragDrop, btnm1_21.DragDrop, btnm1_22.DragDrop, btnm1_23.DragDrop, btnm1_24.DragDrop, btnm1_25.DragDrop, btnm1_26.DragDrop, btnm1_27.DragDrop, btnm1_28.DragDrop, btnm1_29.DragDrop, btnm1_30.DragDrop, btnm2_1.DragDrop, btnm2_2.DragDrop, btnm2_3.DragDrop, btnm2_4.DragDrop, btnm2_5.DragDrop, btnm2_6.DragDrop, btnm2_7.DragDrop, btnm2_8.DragDrop, btnm2_9.DragDrop, btnm2_10.DragDrop, btnm2_11.DragDrop, btnm2_12.DragDrop, btnm2_13.DragDrop, btnm2_14.DragDrop, btnm2_15.DragDrop, btnm2_16.DragDrop, btnm2_17.DragDrop, btnm2_18.DragDrop, btnm2_19.DragDrop, btnm2_20.DragDrop, btnm2_21.DragDrop, btnm2_22.DragDrop, btnm2_23.DragDrop, btnm2_24.DragDrop, btnm2_25.DragDrop, btnm2_26.DragDrop, btnm2_27.DragDrop, btnm2_28.DragDrop, btnm2_29.DragDrop, btnm2_30.DragDrop
         CType(sender, Button).Text = System.IO.Path.GetFileNameWithoutExtension(e.Data.GetData(DataFormats.Text))
@@ -517,9 +515,18 @@ Public Class Form1
 
     Private Sub btnm1_1_Click(sender As Object, e As EventArgs) Handles btnm1_1.Click, btnm1_2.Click, btnm1_3.Click, btnm1_4.Click, btnm1_5.Click, btnm1_6.Click, btnm1_7.Click, btnm1_8.Click, btnm1_9.Click, btnm1_10.Click, btnm1_11.Click, btnm1_12.Click, btnm1_13.Click, btnm1_14.Click, btnm1_15.Click, btnm1_16.Click, btnm1_17.Click, btnm1_18.Click, btnm1_19.Click, btnm1_20.Click, btnm1_21.Click, btnm1_22.Click, btnm1_23.Click, btnm1_24.Click, btnm1_25.Click, btnm1_26.Click, btnm1_27.Click, btnm1_28.Click, btnm1_29.Click, btnm1_30.Click
         If ToolStripMenuItem4.Checked = True Then
-            pisador1 = True
-            IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
-            CType(sender, Button).BackColor = Color.Green
+            If Not CType(sender, Button).Tag = "noitem" Then
+                For Each Control As Button In GroupBox4.Controls
+                    If Not Control.Name = "btn_menu1" Then
+                        If Control.BackColor = Color.Green Then
+                            Control.BackColor = Color.FromArgb(53, 87, 117)
+                        End If
+                    End If
+                Next
+                pisador1 = True
+                IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
+                CType(sender, Button).BackColor = Color.Green
+            End If
         Else
             If Not CType(sender, Button).Tag = "noitem" Then
                 pisador1 = False
@@ -533,9 +540,18 @@ Public Class Form1
 
     Private Sub btnm2_1_Click(sender As Object, e As EventArgs) Handles btnm2_1.Click, btnm2_2.Click, btnm2_3.Click, btnm2_4.Click, btnm2_5.Click, btnm2_6.Click, btnm2_7.Click, btnm2_8.Click, btnm2_9.Click, btnm2_10.Click, btnm2_11.Click, btnm2_12.Click, btnm2_13.Click, btnm2_14.Click, btnm2_15.Click, btnm2_16.Click, btnm2_17.Click, btnm2_18.Click, btnm2_19.Click, btnm2_20.Click, btnm2_21.Click, btnm2_22.Click, btnm2_23.Click, btnm2_24.Click, btnm2_25.Click, btnm2_26.Click, btnm2_27.Click, btnm2_28.Click, btnm2_29.Click, btnm2_30.Click
         If ToolStripMenuItem5.Checked = True Then
-            pisador2 = True
-            IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
-            CType(sender, Button).BackColor = Color.Green
+            If Not CType(sender, Button).Tag = "noitem" Then
+                For Each Control As Button In GroupBox5.Controls
+                    If Not Control.Name = "btn_menu2" Then
+                        If Control.BackColor = Color.Green Then
+                            Control.BackColor = Color.FromArgb(53, 87, 117)
+                        End If
+                    End If
+                Next
+                pisador2 = True
+                IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
+                CType(sender, Button).BackColor = Color.Green
+            End If
         Else
             If Not CType(sender, Button).Tag = "noitem" Then
                 pisador2 = False
@@ -1393,9 +1409,11 @@ Public Class Form1
 
     Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
         If ToolStripMenuItem4.Checked = True Then
-            ToolStripMenuItem4.ForeColor = Color.Red
+            ToolStripMenuItem4.ForeColor = Color.White
+            ToolStripMenuItem4.BackColor = Color.Red
         Else
             ToolStripMenuItem4.ForeColor = Color.Black
+            ToolStripMenuItem4.BackColor = SystemColors.Control
         End If
     End Sub
 
@@ -1403,6 +1421,11 @@ Public Class Form1
         If AxWindowsMediaPlayer2.playState = WMPPlayState.wmppsStopped Then
             DetenerReproduccion3()
             sonido.Continuar()
+            If sonido.EstadoReproduciendo Then
+                Label1.BackColor = Color.Red
+            Else
+                Label1.BackColor = Color.FromArgb(64, 0, 0)
+            End If
             For Each Control As Button In GroupBox4.Controls
                 If Not Control.Name = "btn_menu1" Then
                     If Control.BackColor = Color.Green Then
@@ -1418,27 +1441,29 @@ Public Class Form1
                 End If
             Next
         ElseIf AxWindowsMediaPlayer2.playState = WMPPlayState.wmppsPlaying Then
+            Label1.BackColor = Color.Red
             sonido.Pausar()
+            contvolumen = 0
+            TrackBar2.Value = 0
+            Timer2.Start()
         End If
     End Sub
 
     Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
         If ToolStripMenuItem5.Checked = True Then
-            ToolStripMenuItem5.ForeColor = Color.Red
+            ToolStripMenuItem5.ForeColor = Color.White
+            ToolStripMenuItem5.BackColor = Color.Red
         Else
             ToolStripMenuItem5.ForeColor = Color.Black
+            ToolStripMenuItem5.BackColor = SystemColors.Control
         End If
     End Sub
 
-    Private Sub MoveItemListView1_ItemDrag(sender As Object, e As ItemDragEventArgs) Handles MoveItemListView1.ItemDrag
-        MoveItemListView1.DoDragDrop(MoveItemListView1.SelectedItems(0).SubItems(2).Text, DragDropEffects.Copy)
-    End Sub
-
-    Private Sub lv1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lv1.SelectedIndexChanged
+    Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
 
     End Sub
 
-    Private Sub ExpTree1_StartUpDirectoryChanged(newVal As ExpTree.StartDir) Handles ExpTree1.StartUpDirectoryChanged
-
+    Private Sub TrackBar1_ValueChanged(sender As Object, e As EventArgs) Handles TrackBar1.ValueChanged
+        
     End Sub
 End Class
