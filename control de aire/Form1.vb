@@ -123,7 +123,7 @@ Public Class Form1
         menu2.Show(MousePosition.X, MousePosition.Y)
     End Sub
 
-    Private Sub ExpTree1_DoubleClick(sender As Object, e As EventArgs)
+    Private Sub ExpTree1_DoubleClick(sender As Object, e As EventArgs) Handles ExpTree1.DoubleClick
         ExpTree1.ExpandANode(ExpTree1.SelectedItem)
     End Sub
     Private Sub AfterNodeSelect(ByVal pathName As String, ByVal CSI As CShItem) Handles ExpTree1.ExpTreeNodeSelected
@@ -1465,5 +1465,9 @@ Public Class Form1
 
     Private Sub TrackBar1_ValueChanged(sender As Object, e As EventArgs) Handles TrackBar1.ValueChanged
         
+    End Sub
+
+    Private Sub ExpTree1_StartUpDirectoryChanged(newVal As ExpTree.StartDir) Handles ExpTree1.StartUpDirectoryChanged
+
     End Sub
 End Class
