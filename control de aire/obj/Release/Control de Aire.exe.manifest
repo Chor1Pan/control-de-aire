@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Control de Aire.exe" version="3.0.56.32" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Control de Aire.exe" version="3.0.56.38" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="logo_en_gobito_7nE_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Control de Aire" version="3.0.56.32" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Control de Aire" version="3.0.56.38" language="neutral" processorArchitecture="msil" />
     <commandLine file="Control de Aire.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -50,31 +50,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>E495KE7T2bGkZxU8Io/UlAhCxx4=</dsig:DigestValue>
+        <dsig:DigestValue>wz/eVTZWCmjHSLlEN+n5o70RlwY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Control de Aire.exe" size="2867200">
-      <assemblyIdentity name="Control de Aire" version="3.0.56.32" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Control de Aire.exe" size="2865152">
+      <assemblyIdentity name="Control de Aire" version="3.0.56.38" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QOxeQSzrwHgh07sfDpXmwo6GpgE=</dsig:DigestValue>
+        <dsig:DigestValue>5Qv0Rg8z6MBNoNsAGaG+bbLzlJQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExpTreeLib.dll" size="77824">
-      <assemblyIdentity name="ExpTreeLib" version="2.12.4493.26600" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExpTreeLib.dll" size="89088">
+      <assemblyIdentity name="ExpTreeLib" version="2.12.5920.39347" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>C4wt2PDmw3w655btvdzJii/EDhY=</dsig:DigestValue>
+        <dsig:DigestValue>Y8YvArTve0bbC14TeBDQlGR9k+o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>EZaEJjQHhl73sPpVBwAqsbQ2U64=</dsig:DigestValue>
+        <dsig:DigestValue>tezPoIE9U5bP5haLAKczfUeSM4k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

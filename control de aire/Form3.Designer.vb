@@ -64,6 +64,7 @@ Partial Class Form3
         Me.ColumnHeaderSize = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeaderType = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeaderModifyDate = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.stMensajes = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
@@ -207,7 +208,7 @@ Partial Class Form3
         'ColumnHeader5
         '
         Me.ColumnHeader5.Text = "Pista"
-        Me.ColumnHeader5.Width = 239
+        Me.ColumnHeader5.Width = 250
         '
         'ColumnHeader6
         '
@@ -310,6 +311,7 @@ Partial Class Form3
         'SplitContainer1
         '
         Me.SplitContainer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.SplitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.SplitContainer1.ImeMode = System.Windows.Forms.ImeMode.[On]
         Me.SplitContainer1.Location = New System.Drawing.Point(3, 9)
         Me.SplitContainer1.Name = "SplitContainer1"
@@ -325,6 +327,7 @@ Partial Class Form3
         Me.SplitContainer1.Panel2.Controls.Add(Me.stMensajes)
         Me.SplitContainer1.Size = New System.Drawing.Size(511, 569)
         Me.SplitContainer1.SplitterDistance = 157
+        Me.SplitContainer1.SplitterWidth = 2
         Me.SplitContainer1.TabIndex = 0
         Me.SplitContainer1.TabStop = False
         '
@@ -339,7 +342,7 @@ Partial Class Form3
         Me.ExpTree1.Name = "ExpTree1"
         Me.ExpTree1.ShowHiddenFolders = False
         Me.ExpTree1.ShowRootLines = False
-        Me.ExpTree1.Size = New System.Drawing.Size(157, 569)
+        Me.ExpTree1.Size = New System.Drawing.Size(153, 565)
         Me.ExpTree1.TabIndex = 4
         Me.ExpTree1.TabStop = False
         '
@@ -369,14 +372,14 @@ Partial Class Form3
         'lv1
         '
         Me.lv1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lv1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeaderName, Me.ColumnHeaderSize, Me.ColumnHeaderType, Me.ColumnHeaderModifyDate})
+        Me.lv1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeaderName, Me.ColumnHeaderSize, Me.ColumnHeaderType, Me.ColumnHeaderModifyDate, Me.ColumnHeader1})
         Me.lv1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lv1.LargeImageList = Me.ImageList1
         Me.lv1.Location = New System.Drawing.Point(0, 0)
         Me.lv1.MultiSelect = False
         Me.lv1.Name = "lv1"
         Me.lv1.ShowItemToolTips = True
-        Me.lv1.Size = New System.Drawing.Size(350, 569)
+        Me.lv1.Size = New System.Drawing.Size(348, 565)
         Me.lv1.SmallImageList = Me.ImageList1
         Me.lv1.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.lv1.TabIndex = 6
@@ -405,6 +408,10 @@ Partial Class Form3
         Me.ColumnHeaderModifyDate.Text = "Modificado"
         Me.ColumnHeaderModifyDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.ColumnHeaderModifyDate.Width = 0
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Width = 0
         '
         'ImageList1
         '
@@ -577,4 +584,5 @@ End Sub
     Friend WithEvents ColumnHeader8 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents ActualizarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
 End Class

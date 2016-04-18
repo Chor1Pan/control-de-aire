@@ -9,27 +9,30 @@ Imports AxWMPLib
 Imports WMPLib
 Public Class Form1
     Inherits System.Windows.Forms.Form
-    Dim rs As New Resizer
-    Private LastSelectedCSI As CShItem
-    Dim testTime As New DateTime(1, 1, 1, 0, 0, 0)
-    Private Shared Event1 As New ManualResetEvent(True)
-    Dim tipoarchivo As String
-    Private MouseIsDown As Boolean = False
-    Dim contador As Integer = 0
-    Dim contvolumen As Integer = 0
-    Private hashMusica As New Hashtable()
-    Dim sonido As New Reproductor
-    Private trackBarClick As Boolean
     Dim archivoenlista As String
     Dim pausado As Integer = 0
     Dim fadestop As Integer
     Dim fadecount As Integer = 0
     Dim playlista As Boolean = False
-    Dim launchpad As Boolean = False
     Dim indicelista As Integer
     Dim botonera1 As Boolean
     Dim botonera2 As Boolean
     Dim final As Integer = 0
+    Dim contador As Integer = 0
+    Dim contvolumen As Integer = 0
+    Private hashMusica As New Hashtable()
+    Dim sonido As New Reproductor
+    Dim rs As New Resizer
+    Dim launchpad As Boolean = False
+    Dim testTime As New DateTime(1, 1, 1, 0, 0, 0)
+    Dim tipoarchivo As String
+    Private MouseIsDown As Boolean = False
+    Private trackBarClick As Boolean
+    Private LastSelectedCSI As CShItem
+    Private Shared Event1 As New ManualResetEvent(True)
+    Dim pisador1 As Boolean = False
+    Dim pisador2 As Boolean = False
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
         AxWindowsMediaPlayer1.settings.volume = 0
@@ -55,7 +58,9 @@ Public Class Form1
     Private Sub tiempoyhora_Tick(sender As Object, e As EventArgs) Handles tiempoyhora.Tick
         lbl_fecha.Text = FormatDateTime(Date.Now, DateFormat.LongDate)
         lbl_hora.Text = FormatDateTime(Date.Now, DateFormat.ShortTime) & ":" & Format(Date.Now.Second, "00")
-        If MoveItemListView1.Items.Count > 0 Then
+        If MoveItemListView1.Items.Count = 0 Then
+            indicelista = 0
+        Else
             If MoveItemListView1.SelectedItems.Count = 0 Then
                 Me.MoveItemListView1.Items(indicelista).Focused = True
                 Me.MoveItemListView1.Items(indicelista).Selected = True
@@ -118,7 +123,7 @@ Public Class Form1
         menu2.Show(MousePosition.X, MousePosition.Y)
     End Sub
 
-    Private Sub ExpTree1_DoubleClick(sender As Object, e As EventArgs) Handles ExpTree1.DoubleClick
+    Private Sub ExpTree1_DoubleClick(sender As Object, e As EventArgs)
         ExpTree1.ExpandANode(ExpTree1.SelectedItem)
     End Sub
     Private Sub AfterNodeSelect(ByVal pathName As String, ByVal CSI As CShItem) Handles ExpTree1.ExpTreeNodeSelected
@@ -150,9 +155,9 @@ Public Class Form1
             lv1.Items.Clear()
             RichTextBox1.Text = ""
             If CSI.DisplayName.Equals("Escritorio") Or CSI.DisplayName.Equals("Desktop") Then
-                TextBox2.Text = CShItem.DesktopDirectoryPath
+                TextBox2.Text = CShItem.DesktopDirectoryPath & "\"
             Else
-                TextBox2.Text = CSI.Path
+                TextBox2.Text = CSI.Path & "\"
             End If
             For Each item In combList
                 tipoarchivo = System.IO.Path.GetExtension(item.GetFileName)
@@ -181,6 +186,7 @@ Public Class Form1
                         End If
                         .ImageIndex = SystemImageListManager.GetIconIndex(item, True)
                         .Tag = item
+                        .SubItems.Add(TextBox2.Text & item.GetFileName)
                     End With
                     lv1.Items.Add(lvi)
                 End If
@@ -239,15 +245,7 @@ Public Class Form1
     End Sub
 
     Private Sub lv1_Click(sender As Object, e As EventArgs) Handles lv1.Click
-        TextBox1.Text = lv1.SelectedItems(0).SubItems(0).Text & lv1.SelectedItems(0).SubItems(2).Text
-        Dim vUltimoCaracter As String = TextBox2.Text.Substring(TextBox2.Text.Length - 1)
-        lv1.DoDragDrop(lv1.SelectedItems(0).Text, DragDropEffects.Link)
-        If MouseIsDown Then
-            If vUltimoCaracter = "\" Then
-                TextBox2.Text = Mid(TextBox2.Text, 1, Len(TextBox2.Text) - 1)
-            End If
-            lv1.DoDragDrop(TextBox2.Text & "\" & TextBox1.Text, DragDropEffects.Copy)
-        End If
+
     End Sub
 
     Private Sub lv1_DoubleClick(sender As Object, e As EventArgs) Handles lv1.DoubleClick
@@ -264,16 +262,9 @@ Public Class Form1
         End If
     End Sub
     Private Sub lv1_ItemDrag(sender As Object, e As ItemDragEventArgs) Handles lv1.ItemDrag
-        TextBox1.Text = lv1.SelectedItems(0).SubItems(0).Text & lv1.SelectedItems(0).SubItems(2).Text
-        Dim vUltimoCaracter As String = TextBox2.Text.Substring(TextBox2.Text.Length - 1)
-        lv1.DoDragDrop(lv1.SelectedItems(0).Text, DragDropEffects.Link)
-        If MouseIsDown Then
-            If vUltimoCaracter = "\" Then
-                TextBox2.Text = Mid(TextBox2.Text, 1, Len(TextBox2.Text) - 1)
-            End If
-            lv1.DoDragDrop(TextBox2.Text & "\" & TextBox1.Text, DragDropEffects.Copy)
-        End If
-        MouseIsDown = False
+        lv1.DoDragDrop(lv1.SelectedItems(0).SubItems(4).Text, DragDropEffects.Copy)
+        'End If
+        'MouseIsDown = False
     End Sub
     Private Sub Button1_DragDrop(sender As Object, e As DragEventArgs) Handles btnm1_1.DragDrop, btnm1_2.DragDrop, btnm1_3.DragDrop, btnm1_4.DragDrop, btnm1_5.DragDrop, btnm1_6.DragDrop, btnm1_7.DragDrop, btnm1_8.DragDrop, btnm1_9.DragDrop, btnm1_10.DragDrop, btnm1_11.DragDrop, btnm1_12.DragDrop, btnm1_13.DragDrop, btnm1_14.DragDrop, btnm1_15.DragDrop, btnm1_16.DragDrop, btnm1_17.DragDrop, btnm1_18.DragDrop, btnm1_19.DragDrop, btnm1_20.DragDrop, btnm1_21.DragDrop, btnm1_22.DragDrop, btnm1_23.DragDrop, btnm1_24.DragDrop, btnm1_25.DragDrop, btnm1_26.DragDrop, btnm1_27.DragDrop, btnm1_28.DragDrop, btnm1_29.DragDrop, btnm1_30.DragDrop, btnm2_1.DragDrop, btnm2_2.DragDrop, btnm2_3.DragDrop, btnm2_4.DragDrop, btnm2_5.DragDrop, btnm2_6.DragDrop, btnm2_7.DragDrop, btnm2_8.DragDrop, btnm2_9.DragDrop, btnm2_10.DragDrop, btnm2_11.DragDrop, btnm2_12.DragDrop, btnm2_13.DragDrop, btnm2_14.DragDrop, btnm2_15.DragDrop, btnm2_16.DragDrop, btnm2_17.DragDrop, btnm2_18.DragDrop, btnm2_19.DragDrop, btnm2_20.DragDrop, btnm2_21.DragDrop, btnm2_22.DragDrop, btnm2_23.DragDrop, btnm2_24.DragDrop, btnm2_25.DragDrop, btnm2_26.DragDrop, btnm2_27.DragDrop, btnm2_28.DragDrop, btnm2_29.DragDrop, btnm2_30.DragDrop
         CType(sender, Button).Text = System.IO.Path.GetFileNameWithoutExtension(e.Data.GetData(DataFormats.Text))
@@ -333,10 +324,11 @@ Public Class Form1
         contador = contador + 1
         If contador = 3 Then
             timercanciontiempo.Enabled = False
-            MoveItemListView1.Items.Add(archivoenlista)
+            MoveItemListView1.Items.Add(archivoenlista, 3)
             MoveItemListView1.Items(MoveItemListView1.Items.Count - 1).SubItems.Add(Tamano2(AxWindowsMediaPlayer1.currentMedia.duration))
             MoveItemListView1.Items(MoveItemListView1.Items.Count - 1).SubItems.Add(AxWindowsMediaPlayer1.URL)
             MoveItemListView1.Items(MoveItemListView1.Items.Count - 1).SubItems.Add(AxWindowsMediaPlayer1.currentMedia.duration)
+
             Dim Total As Double, i As Integer
             If MoveItemListView1.Items.Count = 0 Then
                 Label7.Text = "00:00"
@@ -367,6 +359,12 @@ Public Class Form1
             If launchpad = False Then
                 reiniciarcolor()
                 MoveItemListView1.SelectedItems(0).ForeColor = Color.Chartreuse
+                For Each item In MoveItemListView1.Items
+                    item.ImageIndex = 3
+                Next
+                For Each item In MoveItemListView1.SelectedItems
+                    item.ImageIndex = 2
+                Next
             Else
                 reiniciarcolor()
             End If
@@ -411,6 +409,12 @@ Public Class Form1
                     If launchpad = False Then
                         reiniciarcolor()
                         MoveItemListView1.SelectedItems(0).ForeColor = Color.Chartreuse
+                        For Each item In MoveItemListView1.Items
+                            item.ImageIndex = 3
+                        Next
+                        For Each item In MoveItemListView1.SelectedItems
+                            item.ImageIndex = 2
+                        Next
                     Else
                         reiniciarcolor()
                     End If
@@ -442,6 +446,12 @@ Public Class Form1
                 If launchpad = False Then
                     reiniciarcolor()
                     MoveItemListView1.SelectedItems(0).ForeColor = Color.Chartreuse
+                    For Each item In MoveItemListView1.Items
+                        item.ImageIndex = 3
+                    Next
+                    For Each item In MoveItemListView1.SelectedItems
+                        item.ImageIndex = 2
+                    Next
                 Else
                     reiniciarcolor()
                 End If
@@ -462,8 +472,8 @@ Public Class Form1
             AxWindowsMediaPlayer2.settings.volume = 100
             AxWindowsMediaPlayer2.URL = archivoaudio
             AxWindowsMediaPlayer2.Ctlcontrols.play()
-            contvolumen = 2
-            TrackBar2.Value = 2
+            'contvolumen = 2
+            'TrackBar2.Value = 2
             'pausado = 0
         End If
     End Sub
@@ -482,6 +492,12 @@ Public Class Form1
             IniciarReproduccion(ruta, item.SubItems(0).Text)
             playlista = True
             MoveItemListView1.SelectedItems(0).ForeColor = Color.Chartreuse
+            For Each item In MoveItemListView1.Items
+                item.ImageIndex = 3
+            Next
+            For Each item In MoveItemListView1.SelectedItems
+                item.ImageIndex = 2
+            Next
         End If
     End Sub
 
@@ -501,11 +517,13 @@ Public Class Form1
 
     Private Sub btnm1_1_Click(sender As Object, e As EventArgs) Handles btnm1_1.Click, btnm1_2.Click, btnm1_3.Click, btnm1_4.Click, btnm1_5.Click, btnm1_6.Click, btnm1_7.Click, btnm1_8.Click, btnm1_9.Click, btnm1_10.Click, btnm1_11.Click, btnm1_12.Click, btnm1_13.Click, btnm1_14.Click, btnm1_15.Click, btnm1_16.Click, btnm1_17.Click, btnm1_18.Click, btnm1_19.Click, btnm1_20.Click, btnm1_21.Click, btnm1_22.Click, btnm1_23.Click, btnm1_24.Click, btnm1_25.Click, btnm1_26.Click, btnm1_27.Click, btnm1_28.Click, btnm1_29.Click, btnm1_30.Click
         If ToolStripMenuItem4.Checked = True Then
+            pisador1 = True
             IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
+            CType(sender, Button).BackColor = Color.Green
         Else
             If Not CType(sender, Button).Tag = "noitem" Then
+                pisador1 = False
                 colorbotonera()
-
                 IniciarReproduccion(CType(sender, Button).Tag, CType(sender, Button).Text)
                 launchpad = True
                 CType(sender, Button).BackColor = Color.Maroon
@@ -515,9 +533,12 @@ Public Class Form1
 
     Private Sub btnm2_1_Click(sender As Object, e As EventArgs) Handles btnm2_1.Click, btnm2_2.Click, btnm2_3.Click, btnm2_4.Click, btnm2_5.Click, btnm2_6.Click, btnm2_7.Click, btnm2_8.Click, btnm2_9.Click, btnm2_10.Click, btnm2_11.Click, btnm2_12.Click, btnm2_13.Click, btnm2_14.Click, btnm2_15.Click, btnm2_16.Click, btnm2_17.Click, btnm2_18.Click, btnm2_19.Click, btnm2_20.Click, btnm2_21.Click, btnm2_22.Click, btnm2_23.Click, btnm2_24.Click, btnm2_25.Click, btnm2_26.Click, btnm2_27.Click, btnm2_28.Click, btnm2_29.Click, btnm2_30.Click
         If ToolStripMenuItem5.Checked = True Then
+            pisador2 = True
             IniciarReproduccion3(CType(sender, Button).Tag, CType(sender, Button).Text)
+            CType(sender, Button).BackColor = Color.Green
         Else
             If Not CType(sender, Button).Tag = "noitem" Then
+                pisador2 = False
                 colorbotonera()
 
                 IniciarReproduccion(CType(sender, Button).Tag, CType(sender, Button).Text)
@@ -557,6 +578,9 @@ Public Class Form1
         Label1.BackColor = Color.FromArgb(64, 0, 0) '53, 87, 117
         lblcancion.BackColor = Color.FromArgb(53, 87, 117)
         reiniciarcolor()
+        For Each item In MoveItemListView1.Items
+            item.ImageIndex = 3
+        Next
         lblcancion.Text = ""
         Button9.Enabled = False
         Button8.Enabled = True
@@ -680,15 +704,71 @@ Public Class Form1
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Dim selectedItem As Int32
-        If MoveItemListView1.SelectedItems.Count > 0 Then
-            selectedItem = MoveItemListView1.SelectedItems(0).Index
-        End If
+        If sonido.EstadoReproduciendo Then
+            If MoveItemListView1.Items.Count > 1 Then
+                Dim selectedItem As Int32
+                If MoveItemListView1.SelectedItems.Count > 0 Then
+                    selectedItem = MoveItemListView1.SelectedItems(0).Index
+                End If
 
-        If selectedItem < MoveItemListView1.Items.Count - 1 Then
-            MoveItemListView1.Items(selectedItem + 1).Selected = True
-            Dim item As ListViewItem = MoveItemListView1.SelectedItems(0)
-            Dim ruta As String = item.SubItems(2).Text
+                If selectedItem < MoveItemListView1.Items.Count - 1 Then
+                    MoveItemListView1.Items(selectedItem + 1).Selected = True
+                    Dim item As ListViewItem = MoveItemListView1.SelectedItems(0)
+                    Dim ruta As String = item.SubItems(2).Text
+                    IniciarReproduccion(ruta, item.SubItems(0).Text)
+                    reiniciarcolor()
+                    colorbotonera()
+                    MoveItemListView1.SelectedItems(0).ForeColor = Color.Chartreuse
+                    For Each item In MoveItemListView1.Items
+                        item.ImageIndex = 3
+                    Next
+                    For Each item In MoveItemListView1.SelectedItems
+                        item.ImageIndex = 2
+                    Next
+                    playlista = True
+                End If
+            Else
+                Dim selectedItem As Int32
+                If MoveItemListView1.SelectedItems.Count > 0 Then
+                    selectedItem = MoveItemListView1.SelectedItems(0).Index
+                    reiniciarcolor()
+                    colorbotonera()
+                    MoveItemListView1.SelectedItems(0).ForeColor = Color.Chartreuse
+                    For Each item In MoveItemListView1.Items
+                        item.ImageIndex = 3
+                    Next
+                    For Each item In MoveItemListView1.SelectedItems
+                        item.ImageIndex = 2
+                    Next
+                End If
+                If selectedItem < MoveItemListView1.Items.Count Then
+                    MoveItemListView1.Items(selectedItem).Selected = True
+                    Dim item As ListViewItem = MoveItemListView1.SelectedItems(0)
+                    Dim ruta As String = item.SubItems(2).Text
+                    IniciarReproduccion(ruta, item.SubItems(0).Text)
+                    reiniciarcolor()
+                    colorbotonera()
+                    MoveItemListView1.SelectedItems(0).ForeColor = Color.Chartreuse
+                    For Each item In MoveItemListView1.Items
+                        item.ImageIndex = 3
+                    Next
+                    For Each item In MoveItemListView1.SelectedItems
+                        item.ImageIndex = 2
+                    Next
+                    playlista = True
+                End If
+            End If
+        Else
+            Dim selectedItem As Int32
+            If MoveItemListView1.SelectedItems.Count > 0 Then
+                selectedItem = MoveItemListView1.SelectedItems(0).Index
+            End If
+
+            If selectedItem < MoveItemListView1.Items.Count - 1 Then
+                MoveItemListView1.Items(selectedItem + 1).Selected = True
+                Dim item As ListViewItem = MoveItemListView1.SelectedItems(0)
+                Dim ruta As String = item.SubItems(2).Text
+            End If
         End If
     End Sub
 
@@ -699,6 +779,12 @@ Public Class Form1
             reiniciarcolor()
             colorbotonera()
             MoveItemListView1.SelectedItems(0).ForeColor = Color.Chartreuse
+            For Each item In MoveItemListView1.Items
+                item.ImageIndex = 3
+            Next
+            For Each item In MoveItemListView1.SelectedItems
+                item.ImageIndex = 2
+            Next
         End If
         If selectedItem < MoveItemListView1.Items.Count Then
             MoveItemListView1.Items(selectedItem).Selected = True
@@ -708,19 +794,34 @@ Public Class Form1
             reiniciarcolor()
             colorbotonera()
             MoveItemListView1.SelectedItems(0).ForeColor = Color.Chartreuse
+            For Each item In MoveItemListView1.Items
+                item.ImageIndex = 3
+            Next
+            For Each item In MoveItemListView1.SelectedItems
+                item.ImageIndex = 2
+            Next
             playlista = True
         End If
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Dim selectedItem As Int32
-        If MoveItemListView1.SelectedItems.Count > 0 Then
-            selectedItem = MoveItemListView1.SelectedItems(0).Index
-        End If
-        If selectedItem > 0 Then
-            MoveItemListView1.Items(selectedItem - 1).Selected = True
-            Dim item As ListViewItem = MoveItemListView1.SelectedItems(0)
-            Dim ruta As String = item.SubItems(2).Text
+        If sonido.EstadoReproduciendo Then
+            'Timer1.Stop()
+            TrackBar1.Value = 0
+            'sonido.Detener()
+            sonido.Reposicionar(TrackBar1.Value)
+            sonido.ReproducirDesde(TrackBar1.Value)
+            'Timer1.Start()
+        Else
+            Dim selectedItem As Int32
+            If MoveItemListView1.SelectedItems.Count > 0 Then
+                selectedItem = MoveItemListView1.SelectedItems(0).Index
+            End If
+            If selectedItem > 0 Then
+                MoveItemListView1.Items(selectedItem - 1).Selected = True
+                Dim item As ListViewItem = MoveItemListView1.SelectedItems(0)
+                Dim ruta As String = item.SubItems(2).Text
+            End If
         End If
     End Sub
 
@@ -776,7 +877,7 @@ Public Class Form1
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         If sonido.EstadoReproduciendo Then
             fadestop = TrackBar2.Value / Label10.Text
-            fadecount = -1
+            fadecount = 0
             Button1.Enabled = False
             fade.Start()
         End If
@@ -786,7 +887,7 @@ Public Class Form1
         fadecount = fadecount + 1
         On Error Resume Next
         TrackBar2.Value = TrackBar2.Value - fadestop
-        If fadecount >= Label10.Text Then
+        If fadecount > Label10.Text Then
             DetenerReproduccion()
             Button1.Enabled = True
             TrackBar2.Value = 100
@@ -1301,7 +1402,23 @@ Public Class Form1
     Private Sub AxWindowsMediaPlayer2_StatusChange(sender As Object, e As EventArgs) Handles AxWindowsMediaPlayer2.StatusChange
         If AxWindowsMediaPlayer2.playState = WMPPlayState.wmppsStopped Then
             DetenerReproduccion3()
-
+            sonido.Continuar()
+            For Each Control As Button In GroupBox4.Controls
+                If Not Control.Name = "btn_menu1" Then
+                    If Control.BackColor = Color.Green Then
+                        Control.BackColor = Color.FromArgb(53, 87, 117)
+                    End If
+                End If
+            Next
+            For Each Control As Button In GroupBox5.Controls
+                If Not Control.Name = "btn_menu2" Then
+                    If Control.BackColor = Color.Green Then
+                        Control.BackColor = Color.FromArgb(53, 87, 117)
+                    End If
+                End If
+            Next
+        ElseIf AxWindowsMediaPlayer2.playState = WMPPlayState.wmppsPlaying Then
+            sonido.Pausar()
         End If
     End Sub
 
@@ -1311,5 +1428,17 @@ Public Class Form1
         Else
             ToolStripMenuItem5.ForeColor = Color.Black
         End If
+    End Sub
+
+    Private Sub MoveItemListView1_ItemDrag(sender As Object, e As ItemDragEventArgs) Handles MoveItemListView1.ItemDrag
+        MoveItemListView1.DoDragDrop(MoveItemListView1.SelectedItems(0).SubItems(2).Text, DragDropEffects.Copy)
+    End Sub
+
+    Private Sub lv1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lv1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub ExpTree1_StartUpDirectoryChanged(newVal As ExpTree.StartDir) Handles ExpTree1.StartUpDirectoryChanged
+
     End Sub
 End Class
