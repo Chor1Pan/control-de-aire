@@ -35,3 +35,5 @@ E:\control de aire\control de aire\obj\Release\Control de Aire.application
 E:\control de aire\control de aire\obj\Release\Control de Aire.exe
 E:\control de aire\control de aire\obj\Release\Control de Aire.xml
 E:\control de aire\control de aire\obj\Release\Control de Aire.pdb
+E:\control de aire\control de aire\obj\Release\control de aire.vbprojResolveAssemblyReference.cache
+E:\control de aire\control de aire\bin\Release\System.Design.dll

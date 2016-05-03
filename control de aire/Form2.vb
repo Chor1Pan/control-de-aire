@@ -185,6 +185,8 @@ Public Class Form2
         If ListView1.Items(i).Selected = True Then
             Form1.luegopausa()
             Me.Hide()
+            Form1.lblcancion.Text = ""
+
         End If
     End Sub
     Private Sub IniciarReproduccion(ByVal archivoaudio As String, ByVal nombrearchivo As String)
@@ -209,6 +211,10 @@ Public Class Form2
             TrackBar2.Value = 0
             Timer2.Start()
             Form1.Label1.BackColor = Color.Red
+            Form1.stTiemposrestante.Text = "00:00"
+            Form1.stTiempostranscurrido.Text = "00:00"
+            Form1.stTiempostotal.Text = "00:00"
+            Form1.lblcancion.Text = "Reproduciendo tanda " & Form1.Label14.Text
         End If
     End Sub
 
@@ -298,4 +304,5 @@ Public Class Form2
         Dim NewVolumeAllChannels As UInteger = ((CUInt(NewVolume) And &HFFFF) Or (CUInt(NewVolume) << 16))
         Reproductor.waveOutSetVolume(IntPtr.Zero, NewVolumeAllChannels)
     End Sub
+
 End Class

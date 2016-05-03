@@ -7,6 +7,8 @@ Imports System.Text.RegularExpressions
 Imports System.Threading
 Imports AxWMPLib
 Imports WMPLib
+
+
 Public Class Form1
     Inherits System.Windows.Forms.Form
     Dim archivoenlista As String
@@ -33,6 +35,14 @@ Public Class Form1
     Dim pisador1 As Boolean = False
     Dim pisador2 As Boolean = False
 
+    Private Sub Form1_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Form2.Close()
+        Form3.Close()
+        Form4.Close()
+        Application.Exit()
+        Application.ExitThread()
+    End Sub
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
         AxWindowsMediaPlayer1.settings.volume = 0
@@ -56,6 +66,34 @@ Public Class Form1
     End Sub
 
     Private Sub tiempoyhora_Tick(sender As Object, e As EventArgs) Handles tiempoyhora.Tick
+        If Form2.Visible = True Then
+            Panel1.Enabled = False
+        Else
+            Panel1.Enabled = True
+        End If
+
+
+        If Label10.Text = 10 Then
+            fade.Interval = 100
+        ElseIf Label10.Text = 9 Then
+            fade.Interval = 90
+        ElseIf Label10.Text = 8 Then
+            fade.Interval = 80
+        ElseIf Label10.Text = 7 Then
+            fade.Interval = 70
+        ElseIf Label10.Text = 6 Then
+            fade.Interval = 60
+        ElseIf Label10.Text = 5 Then
+            fade.Interval = 50
+        ElseIf Label10.Text = 4 Then
+            fade.Interval = 40
+        ElseIf Label10.Text = 3 Then
+            fade.Interval = 30
+        ElseIf Label10.Text = 2 Then
+            fade.Interval = 20
+        ElseIf Label10.Text = 1 Then
+            fade.Interval = 10
+        End If
         lbl_fecha.Text = FormatDateTime(Date.Now, DateFormat.LongDate)
         lbl_hora.Text = FormatDateTime(Date.Now, DateFormat.ShortTime) & ":" & Format(Date.Now.Second, "00")
         If MoveItemListView1.Items.Count = 0 Then
@@ -369,7 +407,7 @@ Public Class Form1
         End If
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        TextBox3.Text = sonido.niveles
+
         stTiempostotal.Text = sonido.Tamano()
         stTiempostranscurrido.Text = sonido.Posicion()
         stTiemposrestante.Text = sonido.restos
@@ -600,7 +638,6 @@ Public Class Form1
         lblcancion.Text = ""
         Button9.Enabled = False
         Button8.Enabled = True
-        TrackBar2.Value = 0
     End Sub
     Private Sub IniciarReproduccion(ByVal archivoaudio As String, ByVal nombrearchivo As String)
         If archivoaudio <> "" Then
@@ -888,6 +925,7 @@ Public Class Form1
         ElseIf Label10.Text <= 1 Then
             Label10.Text = 1
         End If
+
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
@@ -900,10 +938,10 @@ Public Class Form1
     End Sub
 
     Private Sub fade_Tick(sender As Object, e As EventArgs) Handles fade.Tick
-        fadecount = fadecount + 1
+        'fadecount = fadecount + 1
         On Error Resume Next
-        TrackBar2.Value = TrackBar2.Value - fadestop
-        If fadecount > Label10.Text Then
+        TrackBar2.Value = TrackBar2.Value - 1 'fadestop
+        If TrackBar2.Value <= 0 Then
             DetenerReproduccion()
             Button1.Enabled = True
             TrackBar2.Value = 100
@@ -1468,6 +1506,10 @@ Public Class Form1
     End Sub
 
     Private Sub ExpTree1_StartUpDirectoryChanged(newVal As ExpTree.StartDir) Handles ExpTree1.StartUpDirectoryChanged
+
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
 
     End Sub
 End Class

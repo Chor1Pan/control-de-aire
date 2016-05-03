@@ -292,7 +292,7 @@ Public Class Reproductor
     Public Function niveles() As Integer
         Dim sBuffer As New StringBuilder(MAX_PATH)
         'mciSendString("Status " & strAlias & " level", strReturn, 255, 0)
-        Dim mciResul As Integer = mciSendString("Status " & _Alias & " level", sBuffer, 255, 0)
+        Dim mciResul As Integer = mciSendString("Status level", sBuffer, 255, 0)
         Return mciResul
     End Function
 End Class
