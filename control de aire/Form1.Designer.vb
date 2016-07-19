@@ -26,6 +26,12 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -39,18 +45,8 @@ Partial Class Form1
         Me.stTiemposrestante = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.MoveItemListView1 = New controldeaire.MoveItemListView()
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Label8 = New System.Windows.Forms.Label()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
@@ -177,8 +173,6 @@ Partial Class Form1
         Me.Button15 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
@@ -187,8 +181,13 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
         Me.AxWindowsMediaPlayer2 = New AxWMPLib.AxWindowsMediaPlayer()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.MoveItemListView1 = New controldeaire.MoveItemListView()
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.GroupBox1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -205,11 +204,9 @@ Partial Class Form1
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox7.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
-        Me.GroupBox8.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxWindowsMediaPlayer2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -249,6 +246,105 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.UseCompatibleTextRendering = True
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Button5)
+        Me.Panel1.Controls.Add(Me.Button6)
+        Me.Panel1.Controls.Add(Me.Button8)
+        Me.Panel1.Controls.Add(Me.Button7)
+        Me.Panel1.Controls.Add(Me.Button9)
+        Me.Panel1.Location = New System.Drawing.Point(6, 102)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(442, 55)
+        Me.Panel1.TabIndex = 35
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.LightGray
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button5.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Location = New System.Drawing.Point(357, 3)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(82, 49)
+        Me.Button5.TabIndex = 34
+        Me.Button5.TabStop = False
+        Me.Button5.Text = ":"
+        Me.Button5.UseCompatibleTextRendering = True
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.LightGray
+        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button6.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Location = New System.Drawing.Point(3, 3)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(82, 49)
+        Me.Button6.TabIndex = 34
+        Me.Button6.TabStop = False
+        Me.Button6.Text = "9"
+        Me.Button6.UseCompatibleTextRendering = True
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.LightGray
+        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button8.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(92, 3)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(82, 49)
+        Me.Button8.TabIndex = 34
+        Me.Button8.TabStop = False
+        Me.Button8.Text = "4"
+        Me.Button8.UseCompatibleTextRendering = True
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.LightGray
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button7.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(181, 3)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(82, 49)
+        Me.Button7.TabIndex = 34
+        Me.Button7.TabStop = False
+        Me.Button7.Tag = "Pausar"
+        Me.Button7.Text = ";"
+        Me.Button7.UseCompatibleTextRendering = True
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.LightGray
+        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button9.Enabled = False
+        Me.Button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button9.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(269, 3)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(82, 49)
+        Me.Button9.TabIndex = 34
+        Me.Button9.TabStop = False
+        Me.Button9.Text = "<"
+        Me.Button9.UseCompatibleTextRendering = True
+        Me.Button9.UseVisualStyleBackColor = False
         '
         'Label13
         '
@@ -409,93 +505,6 @@ Partial Class Form1
         Me.Label2.TabIndex = 27
         Me.Label2.Text = "Transcurrido:"
         '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.Color.LightGray
-        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button8.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(92, 3)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(82, 49)
-        Me.Button8.TabIndex = 34
-        Me.Button8.TabStop = False
-        Me.Button8.Text = "4"
-        Me.Button8.UseCompatibleTextRendering = True
-        Me.Button8.UseVisualStyleBackColor = False
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.LightGray
-        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button9.Enabled = False
-        Me.Button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button9.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(269, 3)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(82, 49)
-        Me.Button9.TabIndex = 34
-        Me.Button9.TabStop = False
-        Me.Button9.Text = "<"
-        Me.Button9.UseCompatibleTextRendering = True
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.LightGray
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button7.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(181, 3)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(82, 49)
-        Me.Button7.TabIndex = 34
-        Me.Button7.TabStop = False
-        Me.Button7.Tag = "Pausar"
-        Me.Button7.Text = ";"
-        Me.Button7.UseCompatibleTextRendering = True
-        Me.Button7.UseVisualStyleBackColor = False
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.LightGray
-        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button6.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(3, 3)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(82, 49)
-        Me.Button6.TabIndex = 34
-        Me.Button6.TabStop = False
-        Me.Button6.Text = "9"
-        Me.Button6.UseCompatibleTextRendering = True
-        Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.LightGray
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button5.Font = New System.Drawing.Font("Webdings", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(357, 3)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(82, 49)
-        Me.Button5.TabIndex = 34
-        Me.Button5.TabStop = False
-        Me.Button5.Text = ":"
-        Me.Button5.UseCompatibleTextRendering = True
-        Me.Button5.UseVisualStyleBackColor = False
-        '
         'TrackBar1
         '
         Me.TrackBar1.AutoSize = False
@@ -529,46 +538,6 @@ Partial Class Form1
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.UseCompatibleTextRendering = True
-        '
-        'MoveItemListView1
-        '
-        Me.MoveItemListView1.AllowDrop = True
-        Me.MoveItemListView1.AutoArrange = False
-        Me.MoveItemListView1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.MoveItemListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
-        Me.MoveItemListView1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.MoveItemListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MoveItemListView1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(1, Byte), Integer))
-        Me.MoveItemListView1.FullRowSelect = True
-        Me.MoveItemListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.MoveItemListView1.HideSelection = False
-        Me.MoveItemListView1.InsertionLineColor = System.Drawing.Color.White
-        Me.MoveItemListView1.Location = New System.Drawing.Point(3, 7)
-        Me.MoveItemListView1.Name = "MoveItemListView1"
-        Me.MoveItemListView1.Size = New System.Drawing.Size(453, 220)
-        Me.MoveItemListView1.SmallImageList = Me.ImageList1
-        Me.MoveItemListView1.TabIndex = 52
-        Me.MoveItemListView1.UseCompatibleStateImageBehavior = False
-        Me.MoveItemListView1.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "Pista"
-        Me.ColumnHeader5.Width = 353
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "Tiempo"
-        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.ColumnHeader6.Width = 83
-        '
-        'ColumnHeader7
-        '
-        Me.ColumnHeader7.Width = 0
-        '
-        'ColumnHeader8
-        '
-        Me.ColumnHeader8.Width = 0
         '
         'ImageList1
         '
@@ -2278,7 +2247,7 @@ Partial Class Form1
         '
         'TrackBar2
         '
-        Me.TrackBar2.Location = New System.Drawing.Point(480, 241)
+        Me.TrackBar2.Location = New System.Drawing.Point(534, 351)
         Me.TrackBar2.Maximum = 100
         Me.TrackBar2.Name = "TrackBar2"
         Me.TrackBar2.Orientation = System.Windows.Forms.Orientation.Vertical
@@ -2452,48 +2421,12 @@ Partial Class Form1
         '
         'GroupBox8
         '
-        Me.GroupBox8.Controls.Add(Me.Button17)
-        Me.GroupBox8.Controls.Add(Me.Button12)
         Me.GroupBox8.ForeColor = System.Drawing.Color.White
         Me.GroupBox8.Location = New System.Drawing.Point(465, 327)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(78, 125)
         Me.GroupBox8.TabIndex = 33
         Me.GroupBox8.TabStop = False
-        '
-        'Button17
-        '
-        Me.Button17.AutoEllipsis = True
-        Me.Button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button17.ForeColor = System.Drawing.Color.Black
-        Me.Button17.Image = Global.controldeaire.My.Resources.Resources.user
-        Me.Button17.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button17.Location = New System.Drawing.Point(6, 15)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(66, 49)
-        Me.Button17.TabIndex = 46
-        Me.Button17.TabStop = False
-        Me.Button17.Text = "Comunicar"
-        Me.Button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button17.UseVisualStyleBackColor = True
-        Me.Button17.Visible = False
-        '
-        'Button12
-        '
-        Me.Button12.AutoEllipsis = True
-        Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button12.ForeColor = System.Drawing.Color.Black
-        Me.Button12.Image = Global.controldeaire.My.Resources.Resources.user
-        Me.Button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button12.Location = New System.Drawing.Point(6, 70)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(66, 49)
-        Me.Button12.TabIndex = 46
-        Me.Button12.TabStop = False
-        Me.Button12.Text = "Comunicar"
-        Me.Button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button12.UseVisualStyleBackColor = True
-        Me.Button12.Visible = False
         '
         'Timer2
         '
@@ -2519,7 +2452,7 @@ Partial Class Form1
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(697, 13)
+        Me.TextBox3.Location = New System.Drawing.Point(779, 22)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 51
@@ -2556,17 +2489,45 @@ Partial Class Form1
         Me.AxWindowsMediaPlayer2.TabIndex = 34
         Me.AxWindowsMediaPlayer2.Visible = False
         '
-        'Panel1
+        'MoveItemListView1
         '
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button6)
-        Me.Panel1.Controls.Add(Me.Button8)
-        Me.Panel1.Controls.Add(Me.Button7)
-        Me.Panel1.Controls.Add(Me.Button9)
-        Me.Panel1.Location = New System.Drawing.Point(6, 102)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(442, 55)
-        Me.Panel1.TabIndex = 35
+        Me.MoveItemListView1.AllowDrop = True
+        Me.MoveItemListView1.AutoArrange = False
+        Me.MoveItemListView1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.MoveItemListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
+        Me.MoveItemListView1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.MoveItemListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MoveItemListView1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(1, Byte), Integer))
+        Me.MoveItemListView1.FullRowSelect = True
+        Me.MoveItemListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
+        Me.MoveItemListView1.HideSelection = False
+        Me.MoveItemListView1.InsertionLineColor = System.Drawing.Color.White
+        Me.MoveItemListView1.Location = New System.Drawing.Point(3, 7)
+        Me.MoveItemListView1.Name = "MoveItemListView1"
+        Me.MoveItemListView1.Size = New System.Drawing.Size(453, 220)
+        Me.MoveItemListView1.SmallImageList = Me.ImageList1
+        Me.MoveItemListView1.TabIndex = 52
+        Me.MoveItemListView1.UseCompatibleStateImageBehavior = False
+        Me.MoveItemListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "Pista"
+        Me.ColumnHeader5.Width = 353
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "Tiempo"
+        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.ColumnHeader6.Width = 83
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Width = 0
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Width = 0
         '
         'Form1
         '
@@ -2598,6 +2559,7 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "El Puente FM 103.3 - Control de Aire"
         Me.GroupBox1.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
@@ -2616,11 +2578,9 @@ Partial Class Form1
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox6.ResumeLayout(False)
-        Me.GroupBox8.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AxWindowsMediaPlayer2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout
 
@@ -2770,7 +2730,6 @@ End Sub
     Friend WithEvents RichTextBox2 As System.Windows.Forms.RichTextBox
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents ActualizarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Button12 As System.Windows.Forms.Button
     Friend WithEvents MoveItemListView1 As controldeaire.MoveItemListView
     Friend WithEvents ColumnHeader5 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader6 As System.Windows.Forms.ColumnHeader
@@ -2785,7 +2744,6 @@ End Sub
     Friend WithEvents ToolStripSeparator4 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripMenuItem5 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ExpTree1 As ExpTreeLib.ExpTree
-    Friend WithEvents Button17 As System.Windows.Forms.Button
     Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
     Friend WithEvents Panel1 As System.Windows.Forms.Panel

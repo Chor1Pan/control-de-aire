@@ -36,6 +36,10 @@ Public Class Form1
     Dim pisador2 As Boolean = False
 
     Private Sub Form1_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        '      Dim NewVolume As Integer = ((UShort.MaxValue / 10) * 10)
+        '       Dim NewVolumeAllChannels As UInteger = ((CUInt(100) And &HFFFF) Or (CUInt(NewVolume) << 16))
+        '        Reproductor.waveOutSetVolume(IntPtr.Zero, NewVolumeAllChannels)
+
         Form2.Close()
         Form3.Close()
         Form4.Close()
@@ -117,6 +121,9 @@ Public Class Form1
         Else
             ToolStripMenuItem1.Enabled = False
             ToolStripMenuItem3.Enabled = False
+        End If
+        If sonido.EstadoPausado = True Then
+            TrackBar2.Value = 100
         End If
         If sonido.EstadoReproduciendo = False Then
             If sonido.EstadoPausado = True Then
@@ -543,9 +550,9 @@ Public Class Form1
     End Sub
 
     Private Sub MoveItemListView1_DragEnter(sender As Object, e As DragEventArgs) Handles MoveItemListView1.DragEnter
+
         If (e.Data.GetDataPresent(DataFormats.Text)) Then
             e.Effect = DragDropEffects.Copy
-
         Else
             e.Effect = DragDropEffects.None
         End If

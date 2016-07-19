@@ -28,7 +28,7 @@ Public Class Form2
     Private Sub Form2_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         e.Cancel = True
         DetenerReproduccion()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
