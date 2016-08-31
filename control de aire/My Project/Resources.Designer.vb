@@ -63,6 +63,36 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _1472358143_old_edit_find() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("1472358143_old-edit-find", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _1472439854_search_magnifying_glass_find() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("1472439854_search_magnifying_glass_find", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property about_icon_54865() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("about-icon-54865", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property backwardnormal() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("backwardnormal", resourceCulture)
@@ -156,6 +186,16 @@ Namespace My.Resources
         Friend ReadOnly Property gear24() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("gear24", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property help_icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("help-icon", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

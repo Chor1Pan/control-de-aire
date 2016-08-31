@@ -22,6 +22,18 @@ ControldeAire
   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
+</member><member name="P:controldeaire.My.Resources.Resources._1472358143_old_edit_find">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:controldeaire.My.Resources.Resources._1472439854_search_magnifying_glass_find">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:controldeaire.My.Resources.Resources.about_icon_54865">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:controldeaire.My.Resources.Resources.backwardnormal">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -59,6 +71,10 @@ ControldeAire
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member><member name="P:controldeaire.My.Resources.Resources.gear24">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:controldeaire.My.Resources.Resources.help_icon">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

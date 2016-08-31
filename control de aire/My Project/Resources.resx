@@ -124,6 +124,9 @@
   <data name="set_playlist" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\set_playlist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1472358143_old-edit-find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1472358143_old-edit-find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="startup_01" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
@@ -13089,6 +13092,9 @@
   <data name="open24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\open24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vinilo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vinilo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit-clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -13098,8 +13104,8 @@
   <data name="compile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\compile-warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="vinilo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vinilo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backwardnormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backwardnormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="openfile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -13107,11 +13113,11 @@
   <data name="playdisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playdisabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backwardnormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backwardnormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="FADEOUT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FADEOUT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gear24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gear24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -13119,8 +13125,8 @@
   <data name="pausenormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pausenormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gear24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gear24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="help-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="forwardnormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forwardnormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -13140,8 +13146,14 @@
   <data name="folderopen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\folder-open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pisador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pisador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="vinilo0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vinilo00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="about-icon-54865" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about-icon-54865.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="open_folder_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\open_folder_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -13170,7 +13182,7 @@
   <data name="soundfade" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sound_fade_out-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pisador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pisador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1472439854_search_magnifying_glass_find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1472439854_search_magnifying_glass_find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

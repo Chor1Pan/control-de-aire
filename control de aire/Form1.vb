@@ -1,7 +1,9 @@
 ﻿Imports ExpTreeLib
 Imports ExpTreeLib.CShItem
 Imports ExpTreeLib.SystemImageListManager
+Imports System
 Imports System.IO
+Imports System.Net
 Imports System.Text
 Imports System.Text.RegularExpressions
 Imports System.Threading
@@ -35,17 +37,21 @@ Public Class Form1
     Dim pisador1 As Boolean = False
     Dim pisador2 As Boolean = False
 
-    Private Sub Form1_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
-        '      Dim NewVolume As Integer = ((UShort.MaxValue / 10) * 10)
-        '       Dim NewVolumeAllChannels As UInteger = ((CUInt(100) And &HFFFF) Or (CUInt(NewVolume) << 16))
-        '        Reproductor.waveOutSetVolume(IntPtr.Zero, NewVolumeAllChannels)
-
-        Form2.Close()
-        Form3.Close()
-        Form4.Close()
+    Private Sub Form1_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        TrackBar2.Value = 100
+        Dim NewVolume As Integer = ((UShort.MaxValue / 10) * TrackBar2.Value)
+        Dim NewVolumeAllChannels As UInteger = ((CUInt(NewVolume) And &HFFFF) Or (CUInt(NewVolume) << 16))
+        Reproductor.waveOutSetVolume(IntPtr.Zero, NewVolumeAllChannels)
         Application.Exit()
-        Application.ExitThread()
     End Sub
+
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        DetenerReproduccion()
+        DetenerReproduccion2()
+        DetenerReproduccion3()
+    End Sub
+
+    
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
@@ -57,11 +63,12 @@ Public Class Form1
         MoveItemListView1.HideSelection = False
         TrackBar2.Value = 100
         AxWindowsMediaPlayer1.Ctlcontrols.stop()
-        AxWindowsMediaPlayer1.URL = Application.StartupPath & "\Resources\startup.mp3"
+        AxWindowsMediaPlayer1.URL = Application.StartupPath & "\Resources\startup_01.wav"
         AxWindowsMediaPlayer1.Ctlcontrols.play()
         AxWindowsMediaPlayer1.Ctlcontrols.stop()
         AxWindowsMediaPlayer1.URL = ""
         MoveItemListView1.HideSelection = False
+
     End Sub
 
     Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
@@ -287,10 +294,6 @@ Public Class Form1
             lvi.ImageIndex = 0
         Next
         Event1.Set()
-    End Sub
-
-    Private Sub lv1_Click(sender As Object, e As EventArgs) Handles lv1.Click
-
     End Sub
 
     Private Sub lv1_DoubleClick(sender As Object, e As EventArgs) Handles lv1.DoubleClick
@@ -1057,6 +1060,10 @@ Public Class Form1
             Button15.Enabled = True
             CheckBox1.Enabled = True
         End If
+        If Not Label14.Text = "" Then
+            ToolTip1.SetToolTip(Label14, "Tanda: " & Label14.Text)
+            ToolTip1.SetToolTip(Label12, "Duracion de la Tanda: " & Label12.Text)
+        End If
     End Sub
 
     Private Sub Timer2_Tick_1(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -1393,6 +1400,7 @@ Public Class Form1
     Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
         Label14.Text = ""
         Label12.Text = "00:00"
+        CheckBox1.Checked = False
     End Sub
 
     Private Sub colorbotonera()
@@ -1407,8 +1415,6 @@ Public Class Form1
             End If
         Next
     End Sub
-
-
 
     Private Sub btnm1_1_MouseDown(sender As Object, e As MouseEventArgs) Handles btnm1_1.MouseDown, btnm1_2.MouseDown, btnm1_3.MouseDown, btnm1_4.MouseDown, btnm1_5.MouseDown, btnm1_6.MouseDown, btnm1_7.MouseDown, btnm1_8.MouseDown, btnm1_9.MouseDown, btnm1_10.MouseDown, btnm1_11.MouseDown, btnm1_12.MouseDown, btnm1_13.MouseDown, btnm1_14.MouseDown, btnm1_15.MouseDown, btnm1_16.MouseDown, btnm1_17.MouseDown, btnm1_18.MouseDown, btnm1_19.MouseDown, btnm1_20.MouseDown, btnm1_21.MouseDown, btnm1_22.MouseDown, btnm1_23.MouseDown, btnm1_24.MouseDown, btnm1_25.MouseDown, btnm1_26.MouseDown, btnm1_27.MouseDown, btnm1_28.MouseDown, btnm1_29.MouseDown, btnm1_30.MouseDown, btnm2_1.MouseDown, btnm2_2.MouseDown, btnm2_3.MouseDown, btnm2_4.MouseDown, btnm2_5.MouseDown, btnm2_6.MouseDown, btnm2_7.MouseDown, btnm2_8.MouseDown, btnm2_9.MouseDown, btnm2_10.MouseDown, btnm2_11.MouseDown, btnm2_12.MouseDown, btnm2_13.MouseDown, btnm2_14.MouseDown, btnm2_15.MouseDown, btnm2_16.MouseDown, btnm2_17.MouseDown, btnm2_18.MouseDown, btnm2_19.MouseDown, btnm2_20.MouseDown, btnm2_21.MouseDown, btnm2_22.MouseDown, btnm2_23.MouseDown, btnm2_24.MouseDown, btnm2_25.MouseDown, btnm2_26.MouseDown, btnm2_27.MouseDown, btnm2_28.MouseDown, btnm2_29.MouseDown, btnm2_30.MouseDown
         If e.Button = Windows.Forms.MouseButtons.Right Then
@@ -1504,19 +1510,11 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
-
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        Form6.Show()
     End Sub
 
-    Private Sub TrackBar1_ValueChanged(sender As Object, e As EventArgs) Handles TrackBar1.ValueChanged
-        
-    End Sub
-
-    Private Sub ExpTree1_StartUpDirectoryChanged(newVal As ExpTree.StartDir) Handles ExpTree1.StartUpDirectoryChanged
-
-    End Sub
-
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
 
     End Sub
 End Class

@@ -47,6 +47,11 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.MoveItemListView1 = New controldeaire.MoveItemListView()
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Label8 = New System.Windows.Forms.Label()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
@@ -173,19 +178,16 @@ Partial Class Form1
         Me.Button15 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
         Me.AxWindowsMediaPlayer2 = New AxWMPLib.AxWindowsMediaPlayer()
-        Me.MoveItemListView1 = New controldeaire.MoveItemListView()
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -204,9 +206,10 @@ Partial Class Form1
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox7.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox8.SuspendLayout()
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxWindowsMediaPlayer2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -351,9 +354,9 @@ Partial Class Form1
         Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Lime
-        Me.Label13.Location = New System.Drawing.Point(378, 166)
+        Me.Label13.Location = New System.Drawing.Point(430, 166)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(67, 22)
+        Me.Label13.Size = New System.Drawing.Size(15, 22)
         Me.Label13.TabIndex = 50
         Me.Label13.Text = "0"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -375,6 +378,7 @@ Partial Class Form1
         Me.Button14.TabStop = False
         Me.Button14.Text = "Iniciar"
         Me.Button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.ToolTip1.SetToolTip(Me.Button14, "Inicia la tanda seleccionada de forma inmediata")
         Me.Button14.UseVisualStyleBackColor = True
         '
         'Label14
@@ -417,12 +421,13 @@ Partial Class Form1
         '
         Me.CheckBox1.Enabled = False
         Me.CheckBox1.ForeColor = System.Drawing.Color.White
-        Me.CheckBox1.Location = New System.Drawing.Point(302, 170)
+        Me.CheckBox1.Location = New System.Drawing.Point(300, 173)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(145, 25)
+        Me.CheckBox1.Size = New System.Drawing.Size(145, 21)
         Me.CheckBox1.TabIndex = 44
         Me.CheckBox1.TabStop = False
         Me.CheckBox1.Text = "Ejecutar luego de pista"
+        Me.ToolTip1.SetToolTip(Me.CheckBox1, "Ejecuta la tanda seleccionada" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "luego  de finalizada la pista actual")
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'lblcancion
@@ -442,7 +447,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(297, 48)
+        Me.Label3.Location = New System.Drawing.Point(300, 48)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(73, 18)
         Me.Label3.TabIndex = 27
@@ -453,7 +458,7 @@ Partial Class Form1
         Me.stTiempostotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.stTiempostotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stTiempostotal.ForeColor = System.Drawing.Color.Lime
-        Me.stTiempostotal.Location = New System.Drawing.Point(375, 44)
+        Me.stTiempostotal.Location = New System.Drawing.Point(377, 44)
         Me.stTiempostotal.Name = "stTiempostotal"
         Me.stTiempostotal.Size = New System.Drawing.Size(67, 22)
         Me.stTiempostotal.TabIndex = 27
@@ -538,6 +543,46 @@ Partial Class Form1
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.UseCompatibleTextRendering = True
+        '
+        'MoveItemListView1
+        '
+        Me.MoveItemListView1.AllowDrop = True
+        Me.MoveItemListView1.AutoArrange = False
+        Me.MoveItemListView1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.MoveItemListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
+        Me.MoveItemListView1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.MoveItemListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MoveItemListView1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(1, Byte), Integer))
+        Me.MoveItemListView1.FullRowSelect = True
+        Me.MoveItemListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
+        Me.MoveItemListView1.HideSelection = False
+        Me.MoveItemListView1.InsertionLineColor = System.Drawing.Color.White
+        Me.MoveItemListView1.Location = New System.Drawing.Point(3, 7)
+        Me.MoveItemListView1.Name = "MoveItemListView1"
+        Me.MoveItemListView1.Size = New System.Drawing.Size(453, 220)
+        Me.MoveItemListView1.SmallImageList = Me.ImageList1
+        Me.MoveItemListView1.TabIndex = 52
+        Me.MoveItemListView1.UseCompatibleStateImageBehavior = False
+        Me.MoveItemListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "Pista"
+        Me.ColumnHeader5.Width = 353
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "Tiempo"
+        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.ColumnHeader6.Width = 83
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Width = 0
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Width = 0
         '
         'ImageList1
         '
@@ -696,7 +741,7 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.SplitContainer1)
         Me.GroupBox3.Location = New System.Drawing.Point(0, 451)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(545, 222)
+        Me.GroupBox3.Size = New System.Drawing.Size(543, 222)
         Me.GroupBox3.TabIndex = 4
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.UseCompatibleTextRendering = True
@@ -2145,7 +2190,7 @@ Partial Class Form1
         '
         Me.lbl_fecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_fecha.ForeColor = System.Drawing.Color.White
-        Me.lbl_fecha.Location = New System.Drawing.Point(868, 32)
+        Me.lbl_fecha.Location = New System.Drawing.Point(868, 35)
         Me.lbl_fecha.Name = "lbl_fecha"
         Me.lbl_fecha.Size = New System.Drawing.Size(285, 23)
         Me.lbl_fecha.TabIndex = 10
@@ -2158,7 +2203,7 @@ Partial Class Form1
         Me.lbl_hora.AutoEllipsis = True
         Me.lbl_hora.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_hora.ForeColor = System.Drawing.Color.White
-        Me.lbl_hora.Location = New System.Drawing.Point(868, 1)
+        Me.lbl_hora.Location = New System.Drawing.Point(868, 2)
         Me.lbl_hora.Name = "lbl_hora"
         Me.lbl_hora.Size = New System.Drawing.Size(285, 31)
         Me.lbl_hora.TabIndex = 11
@@ -2222,7 +2267,7 @@ Partial Class Form1
         Me.btn_menu2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
         Me.btn_menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_menu2.ForeColor = System.Drawing.Color.White
-        Me.btn_menu2.Location = New System.Drawing.Point(563, 367)
+        Me.btn_menu2.Location = New System.Drawing.Point(563, 369)
         Me.btn_menu2.Name = "btn_menu2"
         Me.btn_menu2.Size = New System.Drawing.Size(66, 22)
         Me.btn_menu2.TabIndex = 14
@@ -2236,7 +2281,7 @@ Partial Class Form1
         Me.btn_menu1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon
         Me.btn_menu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_menu1.ForeColor = System.Drawing.Color.White
-        Me.btn_menu1.Location = New System.Drawing.Point(563, 53)
+        Me.btn_menu1.Location = New System.Drawing.Point(563, 55)
         Me.btn_menu1.Name = "btn_menu1"
         Me.btn_menu1.Size = New System.Drawing.Size(65, 22)
         Me.btn_menu1.TabIndex = 15
@@ -2384,6 +2429,7 @@ Partial Class Form1
         Me.Button16.TabStop = False
         Me.Button16.Text = "Crear"
         Me.Button16.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.Button16, "Permite crear y administrar archivos de tanda *.tan")
         Me.Button16.UseVisualStyleBackColor = True
         '
         'Button15
@@ -2401,6 +2447,7 @@ Partial Class Form1
         Me.Button15.TabStop = False
         Me.Button15.Text = "Limpiar"
         Me.Button15.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.Button15, "Elimina de la cola cualquier tanda abierta.")
         Me.Button15.UseVisualStyleBackColor = True
         '
         'Button13
@@ -2417,16 +2464,53 @@ Partial Class Form1
         Me.Button13.TabStop = False
         Me.Button13.Text = "Abrir"
         Me.Button13.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.Button13, "Abre un archivo de tanda y lo deja listo para su reproducción.")
         Me.Button13.UseVisualStyleBackColor = True
         '
         'GroupBox8
         '
+        Me.GroupBox8.Controls.Add(Me.Button17)
+        Me.GroupBox8.Controls.Add(Me.Button12)
         Me.GroupBox8.ForeColor = System.Drawing.Color.White
         Me.GroupBox8.Location = New System.Drawing.Point(465, 327)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(78, 125)
         Me.GroupBox8.TabIndex = 33
         Me.GroupBox8.TabStop = False
+        '
+        'Button17
+        '
+        Me.Button17.AutoEllipsis = True
+        Me.Button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button17.Enabled = False
+        Me.Button17.ForeColor = System.Drawing.Color.Black
+        Me.Button17.Image = Global.controldeaire.My.Resources.Resources.about_icon_54865
+        Me.Button17.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button17.Location = New System.Drawing.Point(6, 69)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(65, 49)
+        Me.Button17.TabIndex = 48
+        Me.Button17.TabStop = False
+        Me.Button17.Text = "Acerca de"
+        Me.Button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button17.UseVisualStyleBackColor = True
+        '
+        'Button12
+        '
+        Me.Button12.AutoEllipsis = True
+        Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button12.ForeColor = System.Drawing.Color.Black
+        Me.Button12.Image = Global.controldeaire.My.Resources.Resources._1472358143_old_edit_find
+        Me.Button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button12.Location = New System.Drawing.Point(6, 13)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(65, 49)
+        Me.Button12.TabIndex = 47
+        Me.Button12.TabStop = False
+        Me.Button12.Text = "Buscar"
+        Me.Button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.Button12, "Permite buscar archivos de audio en el equipo.")
+        Me.Button12.UseVisualStyleBackColor = True
         '
         'Timer2
         '
@@ -2458,17 +2542,6 @@ Partial Class Form1
         Me.TextBox3.TabIndex = 51
         Me.TextBox3.Visible = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Image = Global.controldeaire.My.Resources.Resources.logo
-        Me.PictureBox1.Location = New System.Drawing.Point(638, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(222, 53)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'AxWindowsMediaPlayer1
         '
         Me.AxWindowsMediaPlayer1.Enabled = True
@@ -2489,45 +2562,16 @@ Partial Class Form1
         Me.AxWindowsMediaPlayer2.TabIndex = 34
         Me.AxWindowsMediaPlayer2.Visible = False
         '
-        'MoveItemListView1
+        'PictureBox1
         '
-        Me.MoveItemListView1.AllowDrop = True
-        Me.MoveItemListView1.AutoArrange = False
-        Me.MoveItemListView1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.MoveItemListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
-        Me.MoveItemListView1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.MoveItemListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MoveItemListView1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(1, Byte), Integer))
-        Me.MoveItemListView1.FullRowSelect = True
-        Me.MoveItemListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.MoveItemListView1.HideSelection = False
-        Me.MoveItemListView1.InsertionLineColor = System.Drawing.Color.White
-        Me.MoveItemListView1.Location = New System.Drawing.Point(3, 7)
-        Me.MoveItemListView1.Name = "MoveItemListView1"
-        Me.MoveItemListView1.Size = New System.Drawing.Size(453, 220)
-        Me.MoveItemListView1.SmallImageList = Me.ImageList1
-        Me.MoveItemListView1.TabIndex = 52
-        Me.MoveItemListView1.UseCompatibleStateImageBehavior = False
-        Me.MoveItemListView1.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "Pista"
-        Me.ColumnHeader5.Width = 353
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "Tiempo"
-        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.ColumnHeader6.Width = 83
-        '
-        'ColumnHeader7
-        '
-        Me.ColumnHeader7.Width = 0
-        '
-        'ColumnHeader8
-        '
-        Me.ColumnHeader8.Width = 0
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.Image = Global.controldeaire.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(638, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(222, 53)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Form1
         '
@@ -2578,9 +2622,10 @@ Partial Class Form1
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox6.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox8.ResumeLayout(False)
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AxWindowsMediaPlayer2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout
 
@@ -2747,4 +2792,6 @@ End Sub
     Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Button17 As System.Windows.Forms.Button
+    Friend WithEvents Button12 As System.Windows.Forms.Button
 End Class

@@ -129,6 +129,7 @@ Partial Class Form2
         Me.ListView1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(1, Byte), Integer))
         Me.ListView1.FullRowSelect = True
         Me.ListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
+        Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(1, 8)
         Me.ListView1.MultiSelect = False
         Me.ListView1.Name = "ListView1"

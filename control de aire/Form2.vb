@@ -183,9 +183,10 @@ Public Class Form2
         Dim i As Integer
         i = ListView1.Items.Count - 1
         If ListView1.Items(i).Selected = True Then
+            Form1.lblcancion.Text = ""
             Form1.luegopausa()
             Me.Hide()
-            Form1.lblcancion.Text = ""
+
 
         End If
     End Sub

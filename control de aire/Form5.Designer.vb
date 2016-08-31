@@ -30,7 +30,7 @@ Partial Class Form5
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(407, 387)
+        Me.ClientSize = New System.Drawing.Size(716, 594)
         Me.ForeColor = System.Drawing.Color.White
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form5"
